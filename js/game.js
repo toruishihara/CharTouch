@@ -5,7 +5,6 @@ kana = new Array("ヌ", "ヲ", "マ","メ","ミ","ケ","ワ","シ","ツ","ユ");
 hira = new Array("ぬ", "を", "ま","め","み","け","わ","し","つ","ゆ");
 var mat = new Array(20*15);
 
-//var msgEle = document.getElementById("message");
 for(var i=1; i<=10; i++){
 	var ele = document.createElement("div");
 	ele.id = "f"+i;
@@ -18,32 +17,9 @@ for(var i=1; i<=10; i++){
 	mat[y*20+y] = 1;
 	ele.style.left = (x * 32)+"px";
 	ele.style.top = (y * 32)+"px";
-	ele.addEventListener("touchstart", function(evt){
-		if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
-		//alert("id="+this.id+" count="+count+" match="+this.id.match("f"+(count+1)) );
-		if (!this.id.match("f"+(count+1))) return;
-		var obj = this;
-		setTimeout(function(){
-			obj.style.display = "none";
-		}, 2000);
-		this.className = "fade";
-		if (startTime == 0){	// 初めてタッチした場合
-			startTime = (new Date()).getTime();
-			timerID = setInterval(function(){
-				msgEle.innerText = (new Date()).getTime() - startTime+"msec";
-			}, 100);
-		}
-		count = count + 1;	// 旗を取得した数を1増やす
-		if (count >= 10){	// 全ての旗を取った
-			var t = (new Date()).getTime() - startTime;
-			clearInterval(timerID);
-			var txt = "ゲームクリア！タイム："+t+"msec"+"<br>";
-			txt = txt + "<button ontouchstart='location.reload()'>リトライ</button>";
-			msgEle.innerHTML = txt;
-		} else {
-		  nextQuiz();
-		}
-	}, true);
+
+    ele.addEventListener("touchstart", touchHandler, true);
+    ele.addEventListener("click", touchHandler, true);
 	document.getElementById("gameScreen").appendChild(ele);
 }
 setTimeout("window.scrollTo(0,1)", 10);	// ナビゲーションバーを消す
@@ -53,6 +29,24 @@ setTimeout(function(){
 		evt.preventDefault();	// 全体がスクロールするのを禁止
 	}, true);
 }, 1500);
+
+function touchHandler(evt) {
+    if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
+    //alert("id="+this.id+" count="+count+" match="+this.id.match("f"+(count+1)) );
+    if (!this.id.match("f"+(count+1))) return;
+    var obj = this;
+    setTimeout(function(){
+        obj.style.display = "none";
+    }, 2000);
+    this.className = "fade";
+    count = count + 1;	// 旗を取得した数を1増やす
+    if (count >= 10){	// 全ての旗を取った
+        var t = (new Date()).getTime() - startTime;
+        clearInterval(timerID);
+    } else {
+        nextQuiz();
+    }
+}
 
 function nextQuiz() {
 	var obj = document.getElementById("quiz");
