@@ -4,6 +4,12 @@ var timerID = null;	// タイマーID
 kana = new Array("ヌ", "ヲ", "マ","メ","ミ","ケ","ワ","シ","ツ","ユ");
 hira = new Array("ぬ", "を", "ま","め","み","け","わ","し","つ","ゆ");
 var mat = new Array(20*15);
+var msg = document.getElementById("quizMessage");
+var date = new Date();
+console.log("start " + date.getTime());
+
+msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
+msg.addEventListener("click", function(evt){evt.preventDefault();},true);
 
 for(var i=1; i<=10; i++){
 	var ele = document.createElement("div");
@@ -51,7 +57,21 @@ function touchHandler(evt) {
 function nextQuiz() {
 	var obj = document.getElementById("quiz");
 	var msg = document.getElementById("quizMessage");
+    var d = new Date();
+    msg.hideTime = d.getTime() + 2000;
+    console.log("nextQuix " + msg.hideTime);
+
 	obj.innerHTML = hira[count];
 	msg.style.display = "inline";
-	setTimeout('document.getElementById("quizMessage").style.display="none"', 2000);
+	setTimeout(hideQuizMessage, 2000);
+}
+
+function hideQuizMessage() {
+	var msg = document.getElementById("quizMessage");
+    var d = new Date();
+    console.log("hideQuizMessage " + d.getTime() );
+
+	if (msg.hideTime <= d.getTime() ) {
+        msg.style.display = "none";
+    }
 }
