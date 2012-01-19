@@ -21,6 +21,11 @@
 		2D29E6E614C666C600DA44CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C414C666C500DA44CB /* Foundation.framework */; };
 		2D29E6EE14C666C600DA44CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E6EC14C666C600DA44CB /* InfoPlist.strings */; };
 		2D29E6F114C666C600DA44CB /* CharTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6F014C666C600DA44CB /* CharTouchTests.m */; };
+		2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3614C7987200C4DB4E /* galaxy.png */; };
+		2DF1DF3D14C7987200C4DB4E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3814C7987200C4DB4E /* index.html */; };
+		2DF1DF3E14C7987200C4DB4E /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3914C7987200C4DB4E /* main.css */; };
+		2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3A14C7987200C4DB4E /* osk.png */; };
+		2DF1DF4114C798CD00C4DB4E /* game.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3714C7987200C4DB4E /* game.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +43,27 @@
 		2D29E6C214C666C500DA44CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D29E6C414C666C500DA44CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2D29E6C614C666C500DA44CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2D29E6CA14C666C500DA44CB /* CharTouch-Info.plist */ = {isa = PBXFileReference; path = "CharTouch-Info.plist"; sourceTree = "<group>"; };
+		2D29E6CA14C666C500DA44CB /* CharTouch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CharTouch-Info.plist"; sourceTree = "<group>"; };
 		2D29E6CC14C666C500DA44CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D29E6CE14C666C500DA44CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2D29E6D014C666C500DA44CB /* CharTouch-Prefix.pch */ = {isa = PBXFileReference; path = "CharTouch-Prefix.pch"; sourceTree = "<group>"; };
-		2D29E6D114C666C500DA44CB /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D29E6D014C666C500DA44CB /* CharTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CharTouch-Prefix.pch"; sourceTree = "<group>"; };
+		2D29E6D114C666C500DA44CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D29E6D214C666C500DA44CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D29E6D514C666C500DA44CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		2D29E6D814C666C500DA44CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		2D29E6DA14C666C500DA44CB /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		2D29E6DA14C666C500DA44CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2D29E6DB14C666C500DA44CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2D29E6E214C666C600DA44CB /* CharTouchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharTouchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D29E6E314C666C600DA44CB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2D29E6EB14C666C600DA44CB /* CharTouchTests-Info.plist */ = {isa = PBXFileReference; path = "CharTouchTests-Info.plist"; sourceTree = "<group>"; };
+		2D29E6EB14C666C600DA44CB /* CharTouchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CharTouchTests-Info.plist"; sourceTree = "<group>"; };
 		2D29E6ED14C666C600DA44CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D29E6EF14C666C600DA44CB /* CharTouchTests.h */ = {isa = PBXFileReference; path = CharTouchTests.h; sourceTree = "<group>"; };
+		2D29E6EF14C666C600DA44CB /* CharTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharTouchTests.h; sourceTree = "<group>"; };
 		2D29E6F014C666C600DA44CB /* CharTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharTouchTests.m; sourceTree = "<group>"; };
+		2DF1DF3614C7987200C4DB4E /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
+		2DF1DF3714C7987200C4DB4E /* game.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = game.js; sourceTree = "<group>"; };
+		2DF1DF3814C7987200C4DB4E /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		2DF1DF3914C7987200C4DB4E /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
+		2DF1DF3A14C7987200C4DB4E /* osk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 		2D29E6C914C666C500DA44CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2DF1DF3514C7987200C4DB4E /* web */,
 				2D29E6CA14C666C500DA44CB /* CharTouch-Info.plist */,
 				2D29E6CB14C666C500DA44CB /* InfoPlist.strings */,
 				2D29E6CE14C666C500DA44CB /* main.m */,
@@ -152,6 +163,18 @@
 				2D29E6EC14C666C600DA44CB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DF1DF3514C7987200C4DB4E /* web */ = {
+			isa = PBXGroup;
+			children = (
+				2DF1DF3614C7987200C4DB4E /* galaxy.png */,
+				2DF1DF3714C7987200C4DB4E /* game.js */,
+				2DF1DF3814C7987200C4DB4E /* index.html */,
+				2DF1DF3914C7987200C4DB4E /* main.css */,
+				2DF1DF3A14C7987200C4DB4E /* osk.png */,
+			);
+			path = web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF1DF4114C798CD00C4DB4E /* game.js in Resources */,
 				2D29E6CD14C666C500DA44CB /* InfoPlist.strings in Resources */,
 				2D29E6D614C666C500DA44CB /* MainStoryboard_iPhone.storyboard in Resources */,
 				2D29E6D914C666C500DA44CB /* MainStoryboard_iPad.storyboard in Resources */,
+				2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */,
+				2DF1DF3D14C7987200C4DB4E /* index.html in Resources */,
+				2DF1DF3E14C7987200C4DB4E /* main.css in Resources */,
+				2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +471,7 @@
 				2D29E6F614C666C600DA44CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D29E6F714C666C600DA44CB /* Build configuration list for PBXNativeTarget "CharTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +480,7 @@
 				2D29E6F914C666C600DA44CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

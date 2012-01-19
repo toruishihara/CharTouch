@@ -14,7 +14,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+
+	webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    [self.window addSubview:webView];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    
+    [self.window makeKeyAndVisible];  
+    
     return YES;
 }
 							
