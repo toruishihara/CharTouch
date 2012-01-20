@@ -19,8 +19,8 @@ for(var i=1; i<=10; i++){
 	do {
 	  x = Math.floor(Math.random()*20);
 	  y = Math.floor(Math.random()*15);
-	} while (mat[y*20+y] == 0)
-	mat[y*20+y] = 1;
+	} while (mat[y*20+x] == 1)
+	mat[y*20+x] = 1;
 	ele.style.left = (x * 32)+"px";
 	ele.style.top = (y * 32)+"px";
 

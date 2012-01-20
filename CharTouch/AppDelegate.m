@@ -12,6 +12,13 @@
 
 @synthesize window = _window;
 
+- (void)load
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -19,8 +26,7 @@
 
 	webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
     [self.window addSubview:webView];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    [self load];
     
     [self.window makeKeyAndVisible];  
     
@@ -48,6 +54,7 @@
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
+    [self load];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
