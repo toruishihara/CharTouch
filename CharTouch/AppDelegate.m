@@ -12,6 +12,24 @@
 
 @synthesize window = _window;
 
+// debug console redirection
+- (BOOL)webView:(UIWebView *)webView2 
+shouldStartLoadWithRequest:(NSURLRequest *)request 
+ navigationType:(UIWebViewNavigationType)navigationType {
+    
+    NSString *requestString = [[[request URL] absoluteString] stringByReplacingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    //NSLog(requestString);
+    
+    if ([requestString hasPrefix:@"ios-log:"]) {
+        NSString* logString = [[requestString componentsSeparatedByString:@":#iOS#"] objectAtIndex:1];
+        NSLog(@"UIWebView console: %@", logString);
+        return NO;
+    }
+    
+    return YES;
+}
+// debug console redirection
+
 - (void)load
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
@@ -25,6 +43,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
 
 	webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    [webView setDelegate:self];
+    
     [self.window addSubview:webView];
     [self load];
     

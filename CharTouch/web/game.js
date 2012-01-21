@@ -8,6 +8,22 @@ var msg = document.getElementById("quizMessage");
 var date = new Date();
 console.log("start " + date.getTime());
 
+// Debug console redirection
+console = new Object();
+console.log = function(log) {
+    var iframe = document.createElement("IFRAME");
+    iframe.setAttribute("src", "ios-log:#iOS#" + log);
+    document.documentElement.appendChild(iframe);
+    iframe.parentNode.removeChild(iframe);
+    iframe = null;    
+}
+console.debug = console.log;
+console.info = console.log;
+console.warn = console.log;
+console.error = console.log;
+// Debug console redirection
+
+
 msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 msg.addEventListener("click", function(evt){evt.preventDefault();},true);
 
@@ -37,6 +53,7 @@ setTimeout(function(){
 }, 1500);
 
 function touchHandler(evt) {
+    console.log("touchHandler in " + this.id + " " + this.className);
     if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
     //alert("id="+this.id+" count="+count+" match="+this.id.match("f"+(count+1)) );
     if (!this.id.match("f"+(count+1))) return;
@@ -52,6 +69,7 @@ function touchHandler(evt) {
     } else {
         nextQuiz();
     }
+    console.log("touchHandler out");
 }
 
 function nextQuiz() {
@@ -59,19 +77,21 @@ function nextQuiz() {
 	var msg = document.getElementById("quizMessage");
     var d = new Date();
     msg.hideTime = d.getTime() + 2000;
-    console.log("nextQuix " + msg.hideTime);
+    console.log("nextQuix in " + msg.hideTime);
 
 	obj.innerHTML = hira[count];
 	msg.style.display = "inline";
 	setTimeout(hideQuizMessage, 2000);
+    console.log("nextQuix out " + msg.hideTime);
 }
 
 function hideQuizMessage() {
 	var msg = document.getElementById("quizMessage");
     var d = new Date();
-    console.log("hideQuizMessage " + d.getTime() );
+    console.log("hideQuizMessage in " + d.getTime() );
 
 	if (msg.hideTime <= d.getTime() ) {
         msg.style.display = "none";
     }
+    console.log("hideQuizMessage out " + d.getTime() );
 }
