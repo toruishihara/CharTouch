@@ -5,6 +5,7 @@ kana = new Array("ヌ", "ヲ", "マ","メ","ミ","ケ","ワ","シ","ツ","ユ");
 hira = new Array("ぬ", "を", "ま","め","み","け","わ","し","つ","ゆ");
 var mat = new Array(20*15);
 var msg = document.getElementById("quizMessage");
+var full = document.getElementById("gameScreen");
 var date = new Date();
 console.log("start " + date.getTime());
 
@@ -27,6 +28,8 @@ console.error = console.log;
 msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 msg.addEventListener("click", function(evt){evt.preventDefault();},true);
 
+full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
+
 for(var i=1; i<=10; i++){
 	var ele = document.createElement("div");
 	ele.id = "f"+i;
@@ -42,18 +45,26 @@ for(var i=1; i<=10; i++){
 
     ele.addEventListener("touchstart", touchHandler, true);
     ele.addEventListener("click", touchHandler, true);
-	document.getElementById("gameScreen").appendChild(ele);
+    document.getElementById("gameScreen").appendChild(ele);
 }
 setTimeout("window.scrollTo(0,1)", 10);	// ナビゲーションバーを消す
 nextQuiz();
-setTimeout(function(){
-	document.addEventListener("touchstart", function(evt){
-		evt.preventDefault();	// 全体がスクロールするのを禁止
-	}, true);
-}, 1500);
+
+//setTimeout(function(){
+//	document.addEventListener("touchstart", function(evt){
+		//evt.preventDefault();	// 全体がスクロールするのを禁止
+//	}, true);
+//}, 1500);
+
+function testAllItem() {
+    for(var i=1; i<=10; i++){
+        console.log("touchHandler in " + this.id + " " + this.className);
+    }
+}
 
 function touchHandler(evt) {
     console.log("touchHandler in " + this.id + " " + this.className);
+    testAllItem();
     if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
     //alert("id="+this.id+" count="+count+" match="+this.id.match("f"+(count+1)) );
     if (!this.id.match("f"+(count+1))) return;
