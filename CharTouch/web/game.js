@@ -1,8 +1,6 @@
 var startTime = 0;	// 開始時間
 var count = 0;	// 旗を取った数
 var timerID = null;	// タイマーID
-kana = new Array("ヌ", "ヲ", "マ","メ","ミ","ケ","ワ","シ","ツ","ユ");
-hira = new Array("ぬ", "を", "ま","め","み","け","わ","し","つ","ゆ");
 var mat = new Array(20*15);
 var msg = document.getElementById("quizMessage");
 var full = document.getElementById("gameScreen");
@@ -30,10 +28,10 @@ msg.addEventListener("click", function(evt){evt.preventDefault();},true);
 
 full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 
-for(var i=1; i<=10; i++){
+for(var i=0; i<10; i++){
 	var ele = document.createElement("div");
 	ele.id = "f"+i;
-	ele.innerHTML = kana[i-1];
+	ele.innerHTML = num_answer[i];
 	var x,y;
 	do {
 	  x = Math.floor(Math.random()*20);
@@ -41,7 +39,7 @@ for(var i=1; i<=10; i++){
 	} while (mat[y*20+x] == 1)
 	mat[y*20+x] = 1;
 	ele.style.left = (x * 32)+"px";
-	ele.style.top = (y * 32)+"px";
+	ele.style.top = 90 + (y * 32)+"px";
 
     ele.addEventListener("touchstart", touchHandler, true);
     ele.addEventListener("click", touchHandler, true);
@@ -50,24 +48,11 @@ for(var i=1; i<=10; i++){
 setTimeout("window.scrollTo(0,1)", 10);	// ナビゲーションバーを消す
 nextQuiz();
 
-//setTimeout(function(){
-//	document.addEventListener("touchstart", function(evt){
-		//evt.preventDefault();	// 全体がスクロールするのを禁止
-//	}, true);
-//}, 1500);
-
-function testAllItem() {
-    for(var i=1; i<=10; i++){
-        console.log("touchHandler in " + this.id + " " + this.className);
-    }
-}
-
 function touchHandler(evt) {
     console.log("touchHandler in " + this.id + " " + this.className);
-    testAllItem();
     if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
     //alert("id="+this.id+" count="+count+" match="+this.id.match("f"+(count+1)) );
-    if (!this.id.match("f"+(count+1))) return;
+    if (!this.id.match("f"+count)) return;
     var obj = this;
     setTimeout(function(){
         obj.style.display = "none";
@@ -87,12 +72,12 @@ function nextQuiz() {
 	var obj = document.getElementById("quiz");
 	var msg = document.getElementById("quizMessage");
     var d = new Date();
-    msg.hideTime = d.getTime() + 2000;
+    msg.hideTime = d.getTime() + 20000;
     console.log("nextQuix in " + msg.hideTime);
 
-	obj.innerHTML = hira[count];
+	obj.innerHTML = answer_quiz[num_answer[count]];
 	msg.style.display = "inline";
-	setTimeout(hideQuizMessage, 2000);
+	setTimeout(hideQuizMessage, 20000);
     console.log("nextQuix out " + msg.hideTime);
 }
 
