@@ -1,4 +1,4 @@
-var answer_quiz = new Array(50);
+answer_quiz = new Array(50);
 answer_quiz['ア'] = 'あ';
 answer_quiz['イ'] = 'い';
 answer_quiz['ウ'] = 'う';
@@ -46,7 +46,7 @@ answer_quiz['ワ'] = 'わ';
 answer_quiz['ヲ'] = 'を';
 answer_quiz['ン'] = 'ん';
 
-var num_answer = new Array(50);
+num_answer = new Array(50);
 num_answer['0'] = 'ア';
 num_answer['1'] = 'イ';
 num_answer['2'] = 'ウ';
