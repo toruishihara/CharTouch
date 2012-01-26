@@ -46,6 +46,20 @@ body {
 	color: white;
 	font-size: 48px;
 }
+#resultMessage {
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	width: 610px;
+	height: 64px;
+	color: yellow;
+	font-size: medium;
+    display: none;
+}
+#result {
+	color: white;
+	font-size: 48px;
+}
 .fade {
 	-webkit-animation: 'fade' 2s linear 0s 1 normal;
 }

@@ -1,3 +1,4 @@
+var num_quiz = 10;
 var startTime = 0;	// 開始時間
 var count = 0;	// 旗を取った数
 var timerID = null;	// タイマーID
@@ -5,7 +6,8 @@ var mat = new Array(20*15);
 var msg = document.getElementById("quizMessage");
 var full = document.getElementById("gameScreen");
 var date = new Date();
-var quizs = new Array(10);
+var quizs = new Array(num_quiz);
+var results = new Array(num_quiz);
 var used_quiz = new Array(50);
 console.log("start " + date.getTime());
 
@@ -30,7 +32,7 @@ msg.addEventListener("click", function(evt){evt.preventDefault();},true);
 
 full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 
-for(var i=0; i<10; i++){
+for(var i=0; i<num_quiz; i++){
     var q;
     do { 
         q = Math.floor( Math.random() * 46 );
@@ -66,16 +68,19 @@ function touchHandler(evt) {
         setTimeout(function(){
                    obj.id = obj.savedId;
                    }, 2000);
+        results[count] = -1;
         return;
     }
     setTimeout(function(){
         obj.style.display = "none";
     }, 2000);
     this.className = "fade";
+    if (results[count] != -1) {
+        results[count] = 1;
+    }
     count = count + 1;	// 旗を取得した数を1増やす
-    if (count >= 10){	// 全ての旗を取った
-        var t = (new Date()).getTime() - startTime;
-        clearInterval(timerID);
+    if (count >= num_quiz){	// 全ての旗を取った
+        showResult();
     } else {
         nextQuiz();
     }
@@ -104,4 +109,18 @@ function hideQuizMessage() {
         msg.style.display = "none";
     }
     console.log("hideQuizMessage out " + d.getTime() );
+}
+
+function showResult() {
+	var obj = document.getElementById("result");
+	var msg = document.getElementById("resultMessage");
+    
+    var sam = 0;
+    for(var i=0;i<num_quiz;++i) {
+        if (results[i] == 1) {
+            sam = sam + 1;
+        }
+    }
+	obj.innerHTML = sam*100/num_quiz;
+	msg.style.display = "inline";
 }
