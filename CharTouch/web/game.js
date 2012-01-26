@@ -1,14 +1,16 @@
 var num_quiz = 10;
 var startTime = 0;	// 開始時間
 var count = 0;	// 旗を取った数
-var timerID = null;	// タイマーID
+var data_prefix = "1k";
+var all_quiz_num = 26;
+//var timerID = null;	// タイマーID
 var mat = new Array(20*15);
 var msg = document.getElementById("quizMessage");
 var full = document.getElementById("gameScreen");
 var date = new Date();
 var quizs = new Array(num_quiz);
 var results = new Array(num_quiz);
-var used_quiz = new Array(50);
+var used_quiz = new Array(all_quiz_num);
 console.log("start " + date.getTime());
 
 // Debug console redirection
@@ -35,13 +37,14 @@ full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 for(var i=0; i<num_quiz; i++){
     var q;
     do { 
-        q = Math.floor( Math.random() * 46 );
+        q = Math.floor( Math.random() * all_quiz_num );
     } while (used_quiz[q] == 1)
     quizs[i] = q;
     used_quiz[q] = 1;
 	var ele = document.createElement("div");
 	ele.id = "f"+i;
-	ele.innerHTML = num_answer[q];
+    qz = all_quiz[data_prefix+q].split(",");
+    ele.innerHTML = qz[0];
 	var x,y;
 	do {
 	  x = Math.floor(Math.random()*20);
@@ -94,7 +97,8 @@ function nextQuiz() {
     msg.hideTime = d.getTime() + 20000;
     console.log("nextQuix in " + msg.hideTime);
 
-	obj.innerHTML = answer_quiz[num_answer[quizs[count]]];
+    qz = all_quiz[data_prefix+quizs[count]].split(",");
+    obj.innerHTML = qz[1];
 	msg.style.display = "inline";
 	setTimeout(hideQuizMessage, 20000);
     console.log("nextQuix out " + msg.hideTime);
