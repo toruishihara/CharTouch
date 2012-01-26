@@ -59,9 +59,15 @@ nextQuiz();
 function touchHandler(evt) {
     console.log("touchHandler in " + this.id + " " + this.className);
     if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
-    //alert("id="+this.id+" count="+count+" match="+this.id.match("f"+(count+1)) );
-    if (!this.id.match("f"+count)) return;
     var obj = this;
+    if (!this.id.match("f"+count)) {
+        this.savedId = this.id;
+        this.className = "shake";
+        setTimeout(function(){
+                   obj.id = obj.savedId;
+                   }, 2000);
+        return;
+    }
     setTimeout(function(){
         obj.style.display = "none";
     }, 2000);

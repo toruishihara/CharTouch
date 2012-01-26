@@ -47,10 +47,20 @@ body {
 	font-size: 48px;
 }
 .fade {
-	-webkit-animation: 'fade' 10s linear 0s 1 normal;
+	-webkit-animation: 'fade' 2s linear 0s 1 normal;
 }
 @-webkit-keyframes 'fade' {
-	0% { -webkit-transform: scale(2); }
-	5% { -webkit-transform: scale(0); }
+	0% { -webkit-transform: scale(1); }
+	10% { -webkit-transform: scale(3); }
+	90% { -webkit-transform: scale(0); }
 	100% { -webkit-transform: scale(0); }
+}
+.shake {
+	-webkit-animation: 'shake' 1s linear 0s 2 normal;
+}
+@-webkit-keyframes 'shake' {
+	0% { -webkit-transform: rotate(0deg); }
+	25% { -webkit-transform: rotate(20deg); }
+	75% { -webkit-transform: rotate(-20deg); }
+	100% { -webkit-transform: rotate(0deg); }
 }
