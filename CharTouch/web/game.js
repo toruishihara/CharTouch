@@ -5,6 +5,8 @@ var mat = new Array(20*15);
 var msg = document.getElementById("quizMessage");
 var full = document.getElementById("gameScreen");
 var date = new Date();
+var quizs = new Array(10);
+var used_quiz = new Array(50);
 console.log("start " + date.getTime());
 
 // Debug console redirection
@@ -29,9 +31,15 @@ msg.addEventListener("click", function(evt){evt.preventDefault();},true);
 full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 
 for(var i=0; i<10; i++){
+    var q;
+    do { 
+        q = Math.floor( Math.random() * 46 );
+    } while (used_quiz[q] == 1)
+    quizs[i] = q;
+    used_quiz[q] = 1;
 	var ele = document.createElement("div");
 	ele.id = "f"+i;
-	ele.innerHTML = num_answer[i];
+	ele.innerHTML = num_answer[q];
 	var x,y;
 	do {
 	  x = Math.floor(Math.random()*20);
@@ -75,7 +83,7 @@ function nextQuiz() {
     msg.hideTime = d.getTime() + 20000;
     console.log("nextQuix in " + msg.hideTime);
 
-	obj.innerHTML = answer_quiz[num_answer[count]];
+	obj.innerHTML = answer_quiz[num_answer[quizs[count]]];
 	msg.style.display = "inline";
 	setTimeout(hideQuizMessage, 20000);
     console.log("nextQuix out " + msg.hideTime);
