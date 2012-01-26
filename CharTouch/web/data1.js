@@ -1,4 +1,4 @@
-all_quiz = new Array(50);
+all_quiz = new Array(200);
 all_quiz['1n0'] = 'ア,あ';
 all_quiz['1n1'] = 'イ,い';
 all_quiz['1n2'] = 'ウ,う';
@@ -57,7 +57,7 @@ all_quiz['1k8'] = '九,<ruby>⁇<rt>く</rt>年生</ruby>';
 all_quiz['1k9'] = '十,<ruby>⁇<rt>じゅう</rt>年生</ruby>';
 all_quiz['1k10'] = '百,<ruby>⁇<rt>ひゃく</rt>年生</ruby>';
 all_quiz['1k11'] = '木,<ruby>⁇<rt>き</rt>のした</ruby>';
-all_quiz['1k12'] = '口,<ruby>口<rt>くち</rt>ひげ</ruby>';
+all_quiz['1k12'] = '口,<ruby>⁇<rt>くち</rt>ひげ</ruby>';
 all_quiz['1k13'] = '目,みぎ<ruby>⁇<rt>め</rt></ruby>';
 all_quiz['1k14'] = '虫,<ruby>⁇<rt>むし</rt>とり</ruby>';
 all_quiz['1k15'] = '山,<ruby>⁇<rt>やま</rt>ごや</ruby>';

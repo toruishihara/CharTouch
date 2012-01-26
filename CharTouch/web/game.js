@@ -2,9 +2,10 @@ var num_quiz = 10;
 var startTime = 0;	// 開始時間
 var count = 0;	// 旗を取った数
 var data_prefix = "1k";
-var all_quiz_num = 26;
+var all_quiz_num = 97;
 //var timerID = null;	// タイマーID
 var mat = new Array(20*15);
+var mat_base = 20;
 var msg = document.getElementById("quizMessage");
 var full = document.getElementById("gameScreen");
 var date = new Date();
@@ -49,10 +50,15 @@ for(var i=0; i<num_quiz; i++){
 	do {
 	  x = Math.floor(Math.random()*20);
 	  y = Math.floor(Math.random()*15);
-	} while (mat[y*20+x] == 1)
-	mat[y*20+x] = 1;
+	} while (mat[mat_base + y*20+x] == 1)
+	mat[mat_base + y*20+x] = 1;
+	mat[mat_base + y*20+x+1] = 1;
+	mat[mat_base + y*20+x+2] = 1;
+	mat[mat_base + y*20+x-1] = 1;
+    mat[mat_base + (y-1)*20+x-1] = 1;
+	mat[mat_base + (y+1)*20+x-1] = 1;
 	ele.style.left = (x * 32)+"px";
-	ele.style.top = 90 + (y * 32)+"px";
+	ele.style.top = 120 + (y * 32)+"px";
 
     ele.addEventListener("touchstart", touchHandler, true);
     ele.addEventListener("click", touchHandler, true);
