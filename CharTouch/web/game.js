@@ -39,9 +39,10 @@ for(var i=0; i<num_quiz; i++){
     var q;
     do { 
         q = Math.floor( Math.random() * all_quiz_num );
-    } while (used_quiz[q] == 1)
+        qz = all_quiz[data_prefix+q].split(",");
+    } while (used_quiz[qz[0]] == 1)
     quizs[i] = q;
-    used_quiz[q] = 1;
+    used_quiz[qz[0]] = 1;
 	var ele = document.createElement("div");
 	ele.id = "f"+i;
     qz = all_quiz[data_prefix+q].split(",");
@@ -50,13 +51,13 @@ for(var i=0; i<num_quiz; i++){
 	do {
 	  x = Math.floor(Math.random()*20);
 	  y = Math.floor(Math.random()*15);
-	} while (mat[mat_base + y*20+x] == 1)
+	} while (mat[mat_base + y*20 + x] == 1)
 	mat[mat_base + y*20+x] = 1;
 	mat[mat_base + y*20+x+1] = 1;
 	mat[mat_base + y*20+x+2] = 1;
 	mat[mat_base + y*20+x-1] = 1;
-    mat[mat_base + (y-1)*20+x-1] = 1;
-	mat[mat_base + (y+1)*20+x-1] = 1;
+    mat[mat_base + (y-1)*20 + x] = 1;
+	mat[mat_base + (y+1)*20 + x] = 1;
 	ele.style.left = (x * 32)+"px";
 	ele.style.top = 120 + (y * 32)+"px";
 
