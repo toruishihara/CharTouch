@@ -31,12 +31,18 @@ console.error = console.log;
 
 //msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 //msg.addEventListener("click", function(evt){evt.preventDefault();},true);
-//full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
+full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
+//full.addEventListener("touchstart", test_func,true);
 document.getElementById("restart").addEventListener("touchstart", game_start, true);
 document.getElementById("restart").addEventListener("click", game_start, true);
 document.getElementById("grade").addEventListener("change", grade_change, true);
 
 game_start();
+
+function test_func(evt) {
+    console.log("test_func");
+    evt.preventDefault();
+}
 
 function game_start() {
     count = 0;
@@ -85,7 +91,7 @@ function game_start() {
 }
 
 function touchHandler(evt) {
-    console.log("touchHandler in " + this.id + " " + this.className);
+    //console.log("touchHandler in " + this.id + " " + this.className);
     if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
     var obj = this;
     if (!this.id.match("f"+count)) {
@@ -110,7 +116,7 @@ function touchHandler(evt) {
     } else {
         nextQuiz();
     }
-    console.log("touchHandler out");
+    //console.log("touchHandler out");
 }
 
 function nextQuiz() {
@@ -118,13 +124,13 @@ function nextQuiz() {
 	var msg = document.getElementById("quizMessage");
     var d = new Date();
     msg.hideTime = d.getTime() + 60000;
-    console.log("nextQuix in " + msg.hideTime);
+    //console.log("nextQuix in " + msg.hideTime);
 
     qz = all_quiz[data_prefix+quizs[count]].split(",");
     obj.innerHTML = qz[1];
 	msg.style.display = "inline";
 	setTimeout(hideQuizMessage, 60000);
-    console.log("nextQuix out " + msg.hideTime);
+    //console.log("nextQuix out " + msg.hideTime);
 }
 
 function hideQuizMessage() {
