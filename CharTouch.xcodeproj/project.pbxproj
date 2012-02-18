@@ -21,12 +21,17 @@
 		2D29E6E614C666C600DA44CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C414C666C500DA44CB /* Foundation.framework */; };
 		2D29E6EE14C666C600DA44CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E6EC14C666C600DA44CB /* InfoPlist.strings */; };
 		2D29E6F114C666C600DA44CB /* CharTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6F014C666C600DA44CB /* CharTouchTests.m */; };
+		2D71279914CF61F300B7CC9A /* data1.js in Sources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
 		2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6FB9014C79D7900532D47 /* osk_icon.png */; };
+		2DC16BA914D0CE75000A3176 /* data1.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
+		2DD65DEB14D20820007EE293 /* data1k.js in Sources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
+		2DD65DED14D20876007EE293 /* data1k.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3614C7987200C4DB4E /* galaxy.png */; };
 		2DF1DF3D14C7987200C4DB4E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3814C7987200C4DB4E /* index.html */; };
 		2DF1DF3E14C7987200C4DB4E /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3914C7987200C4DB4E /* main.css */; };
 		2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3A14C7987200C4DB4E /* osk.png */; };
 		2DF1DF4114C798CD00C4DB4E /* game.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3714C7987200C4DB4E /* game.js */; };
+		2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF52A0714EE1E7C008AE062 /* iphone4.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +65,15 @@
 		2D29E6ED14C666C600DA44CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D29E6EF14C666C600DA44CB /* CharTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharTouchTests.h; sourceTree = "<group>"; };
 		2D29E6F014C666C600DA44CB /* CharTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharTouchTests.m; sourceTree = "<group>"; };
+		2D71279814CF61F300B7CC9A /* data1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1.js; sourceTree = "<group>"; };
 		2DB6FB9014C79D7900532D47 /* osk_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk_icon.png; sourceTree = "<group>"; };
+		2DD65DEA14D20820007EE293 /* data1k.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1k.js; sourceTree = "<group>"; };
 		2DF1DF3614C7987200C4DB4E /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
 		2DF1DF3714C7987200C4DB4E /* game.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = game.js; sourceTree = "<group>"; };
 		2DF1DF3814C7987200C4DB4E /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		2DF1DF3914C7987200C4DB4E /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 		2DF1DF3A14C7987200C4DB4E /* osk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk.png; sourceTree = "<group>"; };
+		2DF52A0714EE1E7C008AE062 /* iphone4.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,9 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2DF52A0714EE1E7C008AE062 /* iphone4.css */,
+				2DD65DEA14D20820007EE293 /* data1k.js */,
+				2D71279814CF61F300B7CC9A /* data1.js */,
 				2DF1DF3614C7987200C4DB4E /* galaxy.png */,
 				2DF1DF3714C7987200C4DB4E /* game.js */,
 				2DF1DF3814C7987200C4DB4E /* index.html */,
@@ -250,6 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD65DED14D20876007EE293 /* data1k.js in Resources */,
+				2DC16BA914D0CE75000A3176 /* data1.js in Resources */,
 				2DF1DF4114C798CD00C4DB4E /* game.js in Resources */,
 				2D29E6CD14C666C500DA44CB /* InfoPlist.strings in Resources */,
 				2D29E6D614C666C500DA44CB /* MainStoryboard_iPhone.storyboard in Resources */,
@@ -259,6 +272,7 @@
 				2DF1DF3E14C7987200C4DB4E /* main.css in Resources */,
 				2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */,
 				2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */,
+				2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +310,8 @@
 				2D29E6CF14C666C500DA44CB /* main.m in Sources */,
 				2D29E6D314C666C500DA44CB /* AppDelegate.m in Sources */,
 				2D29E6DC14C666C500DA44CB /* ViewController.m in Sources */,
+				2D71279914CF61F300B7CC9A /* data1.js in Sources */,
+				2DD65DEB14D20820007EE293 /* data1k.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +375,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -375,8 +391,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,8 +404,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -398,8 +414,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -414,7 +430,7 @@
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -427,7 +443,7 @@
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

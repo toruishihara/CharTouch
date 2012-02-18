@@ -1,0 +1,6 @@
+*.csv
+*.js
+*.html
+conv.rb
+kanken.rb
+kcsv2js.rb

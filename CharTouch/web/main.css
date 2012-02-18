@@ -16,18 +16,34 @@ body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 640px;
-	height: 480px;
+	width: 768px;
+	height: 1024px;
+}
+#restart
+{
+    position:absolute;
+    left:100px;
+    top:700px;
+	width: 200px;
+	height: 60px;
+}
+#grade
+{
+    position:absolute;
+    left:400px;
+    top:700px;
+	width: 200px;
+	height: 60px;
 }
 #gameScreen button {
 	height:40px;
 	font-size:24pt;
 }
-#f1,#f2,#f3,#f4,#f5,#f6,#f7,#f8,#f9,#f10 {
+#f0,#f1,#f2,#f3,#f4,#f5,#f6,#f7,#f8,#f9 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 32px;
+	width: 64px;
 	height: 32px;
 	color: yellow;
 	font-size: 32px;
@@ -35,9 +51,9 @@ body {
 }
 #quizMessage {
 	position: absolute;
-	top: 100px;
-	left: 100px;
-	width: 320px;
+	top: 20px;
+	left: 50px;
+	width: 610px;
 	height: 64px;
 	color: white;
 	font-size: medium;
@@ -46,11 +62,35 @@ body {
 	color: white;
 	font-size: 48px;
 }
+#resultMessage {
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	width: 610px;
+	height: 64px;
+	color: yellow;
+	font-size: medium;
+    display: none;
+}
+#result {
+	color: white;
+	font-size: 48px;
+}
 .fade {
-	-webkit-animation: 'fade' 10s linear 0s 1 normal;
+	-webkit-animation: 'fade' 2s linear 0s 1 normal;
 }
 @-webkit-keyframes 'fade' {
-	0% { -webkit-transform: scale(2); }
-	5% { -webkit-transform: scale(0); }
+	0% { -webkit-transform: scale(1); }
+	10% { -webkit-transform: scale(3); }
+	90% { -webkit-transform: scale(0); }
 	100% { -webkit-transform: scale(0); }
+}
+.shake {
+	-webkit-animation: 'shake' 1s linear 0s 2 normal;
+}
+@-webkit-keyframes 'shake' {
+	0% { -webkit-transform: rotate(0deg); }
+	25% { -webkit-transform: rotate(20deg); }
+	75% { -webkit-transform: rotate(-20deg); }
+	100% { -webkit-transform: rotate(0deg); }
 }
