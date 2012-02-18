@@ -23,11 +23,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CharTouch/web/game.js"
-         timestampString = "351146937.476485"
+         timestampString = "351222635.565409"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "43"
-         endingLineNumber = "43"
+         startingLineNumber = "48"
+         endingLineNumber = "48"
          landmarkName = "test_func"
          landmarkType = "7">
       </FileBreakpoint>
@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CharTouch/web/game.js"
-         timestampString = "351146937.476485"
+         timestampString = "351222635.565409"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "48"
-         endingLineNumber = "48"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
          landmarkName = "game_start"
          landmarkType = "7">
       </FileBreakpoint>

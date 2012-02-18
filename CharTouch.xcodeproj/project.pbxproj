@@ -31,6 +31,7 @@
 		2DF1DF3E14C7987200C4DB4E /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3914C7987200C4DB4E /* main.css */; };
 		2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3A14C7987200C4DB4E /* osk.png */; };
 		2DF1DF4114C798CD00C4DB4E /* game.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3714C7987200C4DB4E /* game.js */; };
+		2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF52A0714EE1E7C008AE062 /* iphone4.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		2DF1DF3814C7987200C4DB4E /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		2DF1DF3914C7987200C4DB4E /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 		2DF1DF3A14C7987200C4DB4E /* osk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk.png; sourceTree = "<group>"; };
+		2DF52A0714EE1E7C008AE062 /* iphone4.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2DF52A0714EE1E7C008AE062 /* iphone4.css */,
 				2DD65DEA14D20820007EE293 /* data1k.js */,
 				2D71279814CF61F300B7CC9A /* data1.js */,
 				2DF1DF3614C7987200C4DB4E /* galaxy.png */,
@@ -269,6 +272,7 @@
 				2DF1DF3E14C7987200C4DB4E /* main.css in Resources */,
 				2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */,
 				2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */,
+				2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,8 +375,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -387,8 +391,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -400,8 +404,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TORU ISHIHARA (9H9L42Q759)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -410,8 +414,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B90DE199-B573-4A49-83D9-EBF116A20EFC";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -426,7 +430,7 @@
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -439,7 +443,7 @@
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

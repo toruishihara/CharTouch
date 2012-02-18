@@ -1,6 +1,10 @@
 var num_quiz = 10;
 var startTime = 0;	// 開始時間
 var count = 0;	// 旗を取った数
+var font_size = 32;
+var answer_array_width = 20;
+var answer_array_height = 20;
+var answer_offset = 120;
 var data_prefix = "1n";
 var all_quiz_num = 46;
 //var timerID = null;	// タイマーID
@@ -12,6 +16,7 @@ var date = new Date();
 var quizs;// = new Array(num_quiz);
 var results;// = new Array(num_quiz);
 var used_quiz;// = new Array(all_quiz_num);
+var isIphone = 0;
 console.log("start " + date.getTime());
 
 // Debug console redirection
@@ -46,6 +51,14 @@ function test_func(evt) {
 
 function game_start() {
     count = 0;
+    console.log("window.innerWidth=" + window.innerWidth);
+    if (window.innerWidth <= 320) {
+        isIphone = 1;
+        font_size = 24;
+        answer_array_width = 13;
+        answer_array_height = 13;
+        answer_offset = 60;
+    }
     mat = new Array(20*15);
     quizs = new Array(num_quiz);
     results = new Array(num_quiz);
@@ -70,17 +83,17 @@ function game_start() {
         ele.innerHTML = qz[0];
         var x,y;
         do {
-            x = Math.floor(Math.random()*20);
-            y = Math.floor(Math.random()*15);
-        } while (mat[mat_base + y*20 + x] == 1);
-        mat[mat_base + y*20+x] = 1;
-        mat[mat_base + y*20+x+1] = 1;
-        mat[mat_base + y*20+x+2] = 1;
-        mat[mat_base + y*20+x-1] = 1;
-        mat[mat_base + (y-1)*20 + x] = 1;
-        mat[mat_base + (y+1)*20 + x] = 1;
-        ele.style.left = (x * 32)+"px";
-        ele.style.top = 180 + (y * 32)+"px";
+            x = Math.floor(Math.random()*answer_array_width);
+            y = Math.floor(Math.random()*answer_array_height);
+        } while (mat[mat_base + y*answer_array_width + x] == 1);
+        mat[mat_base + y*answer_array_width+x] = 1;
+        mat[mat_base + y*answer_array_width+x+1] = 1;
+        mat[mat_base + y*answer_array_width+x+2] = 1;
+        mat[mat_base + y*answer_array_width+x-1] = 1;
+        mat[mat_base + (y-1)*answer_array_width + x] = 1;
+        mat[mat_base + (y+1)*answer_array_width + x] = 1;
+        ele.style.left = (x * font_size)+"px";
+        ele.style.top = answer_offset + (y * font_size)+"px";
 
         ele.addEventListener("touchstart", touchHandler, true);
         ele.addEventListener("click", touchHandler, true);
@@ -159,6 +172,8 @@ function showResult() {
 }
 
 function grade_change() {
+    console.log("grade change");
+    
     var grade = document.getElementById("grade").value;
     data_prefix = grade.split("_")[0];
     all_quiz_num = grade.split("_")[1];
