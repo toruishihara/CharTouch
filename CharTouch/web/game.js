@@ -36,17 +36,19 @@ console.error = console.log;
 
 //msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 //msg.addEventListener("click", function(evt){evt.preventDefault();},true);
-full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
-//full.addEventListener("touchstart", test_func,true);
+//full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
+full.addEventListener("touchstart", test_func,true);
 document.getElementById("restart").addEventListener("touchstart", game_start, true);
-document.getElementById("restart").addEventListener("click", game_start, true);
+//document.getElementById("restart").addEventListener("click", game_start, true);
 document.getElementById("grade").addEventListener("change", grade_change, true);
 
 game_start();
 
 function test_func(evt) {
-    console.log("test_func");
-    evt.preventDefault();
+    console.log("test_func " + evt.target.tagName);
+    if (evt.target.tagName != 'SELECT' && evt.target.tagName != 'INPUT') {
+        evt.preventDefault();
+    }
 }
 
 function game_start() {
@@ -83,15 +85,20 @@ function game_start() {
         ele.innerHTML = qz[0];
         var x,y;
         do {
-            x = Math.floor(Math.random()*answer_array_width);
+            x = Math.floor(Math.random()*(answer_array_width-1));
             y = Math.floor(Math.random()*answer_array_height);
-        } while (mat[mat_base + y*answer_array_width + x] == 1);
-        mat[mat_base + y*answer_array_width+x] = 1;
-        mat[mat_base + y*answer_array_width+x+1] = 1;
-        mat[mat_base + y*answer_array_width+x+2] = 1;
-        mat[mat_base + y*answer_array_width+x-1] = 1;
+        } while (mat[mat_base + y*answer_array_width + x] > 0);
+        mat[mat_base + y*answer_array_width + x] = 1;
+        mat[mat_base + y*answer_array_width + x+1] = 1;
+        mat[mat_base + y*answer_array_width + x+2] = 1;
+        mat[mat_base + y*answer_array_width + x-1] = 1;
+        mat[mat_base + y*answer_array_width + x-2] = 1;
         mat[mat_base + (y-1)*answer_array_width + x] = 1;
+        mat[mat_base + (y-1)*answer_array_width + x+1] = 1;
+        mat[mat_base + (y-1)*answer_array_width + x-1] = 1;
         mat[mat_base + (y+1)*answer_array_width + x] = 1;
+        mat[mat_base + (y+1)*answer_array_width + x+1] = 1;
+        mat[mat_base + (y+1)*answer_array_width + x-1] = 1;
         ele.style.left = (x * font_size)+"px";
         ele.style.top = answer_offset + (y * font_size)+"px";
 
