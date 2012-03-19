@@ -49,6 +49,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     [self load];
     
     [self.window makeKeyAndVisible];  
+#ifdef PURCHASE_CHECK
+    purchase = [[PurchaseCheck alloc] init];
+#endif
     
     return YES;
 }
