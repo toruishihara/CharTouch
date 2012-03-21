@@ -5,12 +5,12 @@
 body {
 	width: 320px;
 	height:480px;
-	background-image:url(galaxy.png);
+	background-image:url(spaceback.png);
 	-webkit-animation: 'stardriver' 24s linear 0s infinite normal;
 }
 @-webkit-keyframes 'stardriver' {
 	0% { background-position: 0px 0px; }
-	100% { background-position: 0px 240px; }
+	100% { background-position: 0px 480px; }
 }
 #gameScreen {
 	position: absolute;

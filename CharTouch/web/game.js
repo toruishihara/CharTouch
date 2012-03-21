@@ -40,6 +40,7 @@ console.error = console.log;
 full.addEventListener("touchstart", test_func,true);
 document.getElementById("restart").addEventListener("touchstart", game_start, true);
 //document.getElementById("restart").addEventListener("click", game_start, true);
+
 document.getElementById("grade").addEventListener("change", grade_change, true);
 
 game_start();
@@ -177,6 +178,7 @@ function showResult() {
 	obj.innerHTML = sam*100/num_quiz;
 	msg.style.display = "inline";
 }
+
 
 function grade_change() {
     console.log("grade change");
