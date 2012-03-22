@@ -39,6 +39,7 @@
 		2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3A14C7987200C4DB4E /* osk.png */; };
 		2DF1DF4114C798CD00C4DB4E /* game.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3714C7987200C4DB4E /* game.js */; };
 		2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF52A0714EE1E7C008AE062 /* iphone4.css */; };
+		2DFA136E151BC28500458B97 /* redo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA136D151BC28500458B97 /* redo_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		2DF1DF3914C7987200C4DB4E /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 		2DF1DF3A14C7987200C4DB4E /* osk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk.png; sourceTree = "<group>"; };
 		2DF52A0714EE1E7C008AE062 /* iphone4.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4.css; sourceTree = "<group>"; };
+		2DFA136D151BC28500458B97 /* redo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redo_icon.png; path = ../../../redo_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2DFA136D151BC28500458B97 /* redo_icon.png */,
 				2DCFEA08151A84A200253EBA /* space_kana.png */,
 				2DCFEA06151799FA00253EBA /* spaceback.png */,
 				2DF52A0714EE1E7C008AE062 /* iphone4.css */,
@@ -302,6 +305,7 @@
 				2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */,
 				2DCFEA0D151AA34F00253EBA /* Default.png in Resources */,
 				2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */,
+				2DFA136E151BC28500458B97 /* redo_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

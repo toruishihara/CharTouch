@@ -44,8 +44,15 @@ document.getElementById("restart").addEventListener("touchstart", game_start, tr
 document.getElementById("grade").addEventListener("change", grade_change, true);
 
 document.getElementById("quizMessage").style.display = "none";
-game_title();
-setTimeout(game_start, 4000);
+
+console.log("top level main");
+window.addEventListener("load", onload, true);
+
+function onload() {
+    console.log("onload");
+    game_title();
+    setTimeout(game_start, 4000);
+}
 
 function test_func(evt) {
     console.log("test_func " + evt.target.tagName);
@@ -55,6 +62,8 @@ function test_func(evt) {
 }
 
 function game_title() {
+    console.log("game_title");
+
     var title = document.getElementById("titleLogo");
     setTimeout(function(){
                title.className = "fadeTitle";
@@ -66,7 +75,7 @@ function game_title() {
 
 function game_start() {
     count = 0;
-    console.log("window.innerWidth=" + window.innerWidth);
+    console.log("game_start innerWidth=" + window.innerWidth);
     if (window.innerWidth <= 320) {
         isIphone = 1;
         font_size = 24;
@@ -119,7 +128,7 @@ function game_start() {
         ele.addEventListener("click", touchHandler, true);
         document.getElementById("gameScreen").appendChild(ele);
     }
-    setTimeout("window.scrollTo(0,1)", 10);	// ナビゲーションバーを消す
+    //setTimeout("window.scrollTo(0,1)", 10);	// ナビゲーションバーを消す
     nextQuiz();
 }
 
