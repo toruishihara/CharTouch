@@ -22,8 +22,15 @@
 		2D29E6EE14C666C600DA44CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E6EC14C666C600DA44CB /* InfoPlist.strings */; };
 		2D29E6F114C666C600DA44CB /* CharTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6F014C666C600DA44CB /* CharTouchTests.m */; };
 		2D71279914CF61F300B7CC9A /* data1.js in Sources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
+		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
 		2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6FB9014C79D7900532D47 /* osk_icon.png */; };
 		2DC16BA914D0CE75000A3176 /* data1.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
+		2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFEA031517929C00253EBA /* PurchaseCheck.m */; };
+		2DCFEA07151799FA00253EBA /* spaceback.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA06151799FA00253EBA /* spaceback.png */; };
+		2DCFEA09151A84A200253EBA /* space_kana.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA08151A84A200253EBA /* space_kana.png */; };
+		2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */; };
+		2DCFEA0D151AA34F00253EBA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0C151AA34F00253EBA /* Default.png */; };
+		2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0E151AA35700253EBA /* Default@2x.png */; };
 		2DD65DEB14D20820007EE293 /* data1k.js in Sources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2DD65DED14D20876007EE293 /* data1k.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3614C7987200C4DB4E /* galaxy.png */; };
@@ -66,7 +73,15 @@
 		2D29E6EF14C666C600DA44CB /* CharTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharTouchTests.h; sourceTree = "<group>"; };
 		2D29E6F014C666C600DA44CB /* CharTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharTouchTests.m; sourceTree = "<group>"; };
 		2D71279814CF61F300B7CC9A /* data1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1.js; sourceTree = "<group>"; };
+		2D911C4F14F8D2780058C6CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2DB6FB9014C79D7900532D47 /* osk_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk_icon.png; sourceTree = "<group>"; };
+		2DCFEA021517929C00253EBA /* PurchaseCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseCheck.h; sourceTree = "<group>"; };
+		2DCFEA031517929C00253EBA /* PurchaseCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseCheck.m; sourceTree = "<group>"; };
+		2DCFEA06151799FA00253EBA /* spaceback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceback.png; sourceTree = "<group>"; };
+		2DCFEA08151A84A200253EBA /* space_kana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana.png; sourceTree = "<group>"; };
+		2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana_icon.png; sourceTree = "<group>"; };
+		2DCFEA0C151AA34F00253EBA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2DCFEA0E151AA35700253EBA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2DD65DEA14D20820007EE293 /* data1k.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1k.js; sourceTree = "<group>"; };
 		2DF1DF3614C7987200C4DB4E /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
 		2DF1DF3714C7987200C4DB4E /* game.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = game.js; sourceTree = "<group>"; };
@@ -81,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */,
 				2D29E6C314C666C500DA44CB /* UIKit.framework in Frameworks */,
 				2D29E6C514C666C500DA44CB /* Foundation.framework in Frameworks */,
 				2D29E6C714C666C500DA44CB /* CoreGraphics.framework in Frameworks */,
@@ -103,6 +119,10 @@
 		2D29E6B314C666C500DA44CB = {
 			isa = PBXGroup;
 			children = (
+				2DCFEA0E151AA35700253EBA /* Default@2x.png */,
+				2DCFEA0C151AA34F00253EBA /* Default.png */,
+				2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */,
+				2D911C4F14F8D2780058C6CE /* StoreKit.framework */,
 				2DB6FB9014C79D7900532D47 /* osk_icon.png */,
 				2D29E6C814C666C500DA44CB /* CharTouch */,
 				2D29E6E914C666C600DA44CB /* CharTouchTests */,
@@ -134,6 +154,8 @@
 		2D29E6C814C666C500DA44CB /* CharTouch */ = {
 			isa = PBXGroup;
 			children = (
+				2DCFEA021517929C00253EBA /* PurchaseCheck.h */,
+				2DCFEA031517929C00253EBA /* PurchaseCheck.m */,
 				2D29E6D114C666C500DA44CB /* AppDelegate.h */,
 				2D29E6D214C666C500DA44CB /* AppDelegate.m */,
 				2D29E6D414C666C500DA44CB /* MainStoryboard_iPhone.storyboard */,
@@ -179,6 +201,8 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2DCFEA08151A84A200253EBA /* space_kana.png */,
+				2DCFEA06151799FA00253EBA /* spaceback.png */,
 				2DF52A0714EE1E7C008AE062 /* iphone4.css */,
 				2DD65DEA14D20820007EE293 /* data1k.js */,
 				2D71279814CF61F300B7CC9A /* data1.js */,
@@ -194,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D29E6BD14C666C500DA44CB /* CharTouch */ = {
+		2D29E6BD14C666C500DA44CB /* カタカナ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "CharTouch" */;
+			buildConfigurationList = 2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "カタカナ" */;
 			buildPhases = (
 				2D29E6BA14C666C500DA44CB /* Sources */,
 				2D29E6BB14C666C500DA44CB /* Frameworks */,
@@ -206,7 +230,7 @@
 			);
 			dependencies = (
 			);
-			name = CharTouch;
+			name = "カタカナ";
 			productName = CharTouch;
 			productReference = 2D29E6BE14C666C500DA44CB /* CharTouch.app */;
 			productType = "com.apple.product-type.application";
@@ -250,7 +274,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D29E6BD14C666C500DA44CB /* CharTouch */,
+				2D29E6BD14C666C500DA44CB /* カタカナ */,
 				2D29E6E114C666C600DA44CB /* CharTouchTests */,
 			);
 		};
@@ -273,6 +297,11 @@
 				2DF1DF3F14C7987200C4DB4E /* osk.png in Resources */,
 				2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */,
 				2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */,
+				2DCFEA07151799FA00253EBA /* spaceback.png in Resources */,
+				2DCFEA09151A84A200253EBA /* space_kana.png in Resources */,
+				2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */,
+				2DCFEA0D151AA34F00253EBA /* Default.png in Resources */,
+				2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +341,7 @@
 				2D29E6DC14C666C500DA44CB /* ViewController.m in Sources */,
 				2D71279914CF61F300B7CC9A /* data1.js in Sources */,
 				2DD65DEB14D20820007EE293 /* data1k.js in Sources */,
+				2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +358,7 @@
 /* Begin PBXTargetDependency section */
 		2D29E6E814C666C600DA44CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D29E6BD14C666C500DA44CB /* CharTouch */;
+			target = 2D29E6BD14C666C500DA44CB /* カタカナ */;
 			targetProxy = 2D29E6E714C666C600DA44CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -390,7 +420,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -412,7 +442,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -427,6 +457,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +471,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "CharTouch" */ = {
+		2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "カタカナ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D29E6F514C666C600DA44CB /* Debug */,

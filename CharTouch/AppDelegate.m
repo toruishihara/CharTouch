@@ -40,9 +40,10 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
 
 	webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    webView.backgroundColor = [UIColor blackColor];
     [webView setDelegate:self];
     
     [self.window addSubview:webView];
@@ -89,11 +90,10 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
+#ifdef PURCHASE_CHECK
+    [purchase release];
+#endif
+
 }
 
 @end

@@ -76,6 +76,7 @@ body {
 	color: white;
 	font-size: 48px;
 }
+
 .fade {
 	-webkit-animation: 'fade' 2s linear 0s 1 normal;
 }
@@ -85,6 +86,7 @@ body {
 	90% { -webkit-transform: scale(0); }
 	100% { -webkit-transform: scale(0); }
 }
+
 .shake {
 	-webkit-animation: 'shake' 1s linear 0s 2 normal;
 }
@@ -94,3 +96,13 @@ body {
 	75% { -webkit-transform: rotate(-20deg); }
 	100% { -webkit-transform: rotate(0deg); }
 }
+
+.fadeTitle {
+	-webkit-animation: 'fadeTitle' 2s linear 0s 1 normal;
+}
+@-webkit-keyframes 'fadeTitle' {
+	0% { -webkit-transform: scale(1); }
+	90% { -webkit-transform: scale(0); }
+	100% { -webkit-transform: scale(0); }
+}
+

@@ -10,7 +10,7 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>osk_icon.png</string>
+		<string>space_kana_icon.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -18,14 +18,14 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>osk_icon.png</string>
+				<string>space_kana_icon.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.nariuchi.chartouch</string>
+	<string>com.nariuchi.spacekana</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

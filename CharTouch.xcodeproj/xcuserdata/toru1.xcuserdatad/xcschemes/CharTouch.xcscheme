@@ -15,7 +15,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D29E6BD14C666C500DA44CB"
                BuildableName = "CharTouch.app"
-               BlueprintName = "CharTouch"
+               BlueprintName = "&#12459;&#12479;&#12459;&#12490;"
                ReferencedContainer = "container:CharTouch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,7 +43,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D29E6BD14C666C500DA44CB"
             BuildableName = "CharTouch.app"
-            BlueprintName = "CharTouch"
+            BlueprintName = "&#12459;&#12479;&#12459;&#12490;"
             ReferencedContainer = "container:CharTouch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,7 +61,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D29E6BD14C666C500DA44CB"
             BuildableName = "CharTouch.app"
-            BlueprintName = "CharTouch"
+            BlueprintName = "&#12459;&#12479;&#12459;&#12490;"
             ReferencedContainer = "container:CharTouch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -79,7 +79,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D29E6BD14C666C500DA44CB"
             BuildableName = "CharTouch.app"
-            BlueprintName = "CharTouch"
+            BlueprintName = "&#12459;&#12479;&#12459;&#12490;"
             ReferencedContainer = "container:CharTouch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

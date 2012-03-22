@@ -43,13 +43,25 @@ document.getElementById("restart").addEventListener("touchstart", game_start, tr
 
 document.getElementById("grade").addEventListener("change", grade_change, true);
 
-game_start();
+document.getElementById("quizMessage").style.display = "none";
+game_title();
+setTimeout(game_start, 4000);
 
 function test_func(evt) {
     console.log("test_func " + evt.target.tagName);
     if (evt.target.tagName != 'SELECT' && evt.target.tagName != 'INPUT') {
         evt.preventDefault();
     }
+}
+
+function game_title() {
+    var title = document.getElementById("titleLogo");
+    setTimeout(function(){
+               title.className = "fadeTitle";
+               }, 2000);
+    setTimeout(function(){
+               title.style.display = "none";
+               }, 4000);
 }
 
 function game_start() {
@@ -144,13 +156,12 @@ function nextQuiz() {
 	var obj = document.getElementById("quiz");
 	var msg = document.getElementById("quizMessage");
     var d = new Date();
-    msg.hideTime = d.getTime() + 60000;
-    //console.log("nextQuix in " + msg.hideTime);
 
+    //console.log("nextQuix in " + msg.hideTime);
     qz = all_quiz[data_prefix+quizs[count]].split(",");
     obj.innerHTML = qz[1];
 	msg.style.display = "inline";
-	setTimeout(hideQuizMessage, 60000);
+	//setTimeout(hideQuizMessage, 60000);
     //console.log("nextQuix out " + msg.hideTime);
 }
 
