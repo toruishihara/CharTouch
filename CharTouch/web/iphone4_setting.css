@@ -1,0 +1,21 @@
+#header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 320px;
+	height: 40px;
+    background-color: black;
+}
+#backbtn {
+	position: absolute;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 20px;
+    -webkit-border-bottom-right-radius: 5px;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+}
+#titleLogo {
+    padding-top: 50px;
+}

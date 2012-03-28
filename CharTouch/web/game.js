@@ -5,8 +5,9 @@ var font_size = 32;
 var answer_array_width = 20;
 var answer_array_height = 20;
 var answer_offset = 120;
-var data_prefix = "1n";
-var all_quiz_num = 46;
+var default_grade = "1n_46";
+//var data_prefix = "1n";
+//var all_quiz_num = 46;
 //var timerID = null;	// タイマーID
 var mat;// = new Array(20*15);
 var mat_base = 20;
@@ -39,14 +40,15 @@ console.error = console.log;
 //full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 full.addEventListener("touchstart", test_func,true);
 document.getElementById("restart").addEventListener("touchstart", game_start, true);
-//document.getElementById("restart").addEventListener("click", game_start, true);
-
-document.getElementById("grade").addEventListener("change", grade_change, true);
+document.getElementById("setting").addEventListener("touchstart", game_setting, true);
+document.getElementById("setting").addEventListener("click", game_setting, true);
+document.getElementById("backbtn").addEventListener("touchstart", game_back, true);
 
 document.getElementById("quizMessage").style.display = "none";
 
 console.log("top level main");
-window.addEventListener("load", onload, true);
+onload();
+//window.addEventListener("load", onload, true);
 
 function onload() {
     console.log("onload");
@@ -83,6 +85,16 @@ function game_start() {
         answer_array_height = 13;
         answer_offset = 60;
     }
+    var grade = window.sessionStorage["grade"];
+    console.log("grade=" + grade);
+    if (grade==undefined || grade.length < 2) {
+        console.log("grade=default");
+        grade = default_grade;
+    }
+        
+    data_prefix = grade.split("_")[0];
+    all_quiz_num = grade.split("_")[1];
+
     mat = new Array(20*15);
     quizs = new Array(num_quiz);
     results = new Array(num_quiz);
@@ -130,6 +142,18 @@ function game_start() {
     }
     //setTimeout("window.scrollTo(0,1)", 10);	// ナビゲーションバーを消す
     nextQuiz();
+}
+
+function game_setting() {
+    console.log("game_setting");
+    //window.open('setting.html');
+    location.href="setting.html";
+    return false;
+}
+
+function game_back() {
+    console.log("game_back");
+    location.href="index.html";
 }
 
 function touchHandler(evt) {
@@ -199,12 +223,3 @@ function showResult() {
 	msg.style.display = "inline";
 }
 
-
-function grade_change() {
-    console.log("grade change");
-    
-    var grade = document.getElementById("grade").value;
-    data_prefix = grade.split("_")[0];
-    all_quiz_num = grade.split("_")[1];
-    game_start();
-}

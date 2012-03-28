@@ -34,6 +34,14 @@ body {
 	width:40px;
 	height:40px;
 }
+#setting
+{
+    position:absolute;
+    left:260px;
+    top:420px;
+	width:40px;
+	height:40px;
+}
 #grade
 {
     position:absolute;
@@ -64,6 +72,7 @@ body {
 	height: 48px;
 	color: white;
 	font-size: medium;
+    display: none;
 }
 #quiz {
 	color: white;
