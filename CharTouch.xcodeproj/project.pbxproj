@@ -23,6 +23,9 @@
 		2D29E6F114C666C600DA44CB /* CharTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6F014C666C600DA44CB /* CharTouchTests.m */; };
 		2D71279914CF61F300B7CC9A /* data1.js in Sources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
 		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
+		2DB51C501523E2660055CE3C /* setting.js in Sources */ = {isa = PBXBuildFile; fileRef = 2DB51C4E1523E2660055CE3C /* setting.js */; };
+		2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4F1523E2660055CE3C /* space_kana_bk.png */; };
+		2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C531523E2AD0055CE3C /* iphone4_setting.css */; };
 		2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6FB9014C79D7900532D47 /* osk_icon.png */; };
 		2DC16BA914D0CE75000A3176 /* data1.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
 		2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFEA031517929C00253EBA /* PurchaseCheck.m */; };
@@ -77,6 +80,9 @@
 		2D29E6F014C666C600DA44CB /* CharTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharTouchTests.m; sourceTree = "<group>"; };
 		2D71279814CF61F300B7CC9A /* data1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1.js; sourceTree = "<group>"; };
 		2D911C4F14F8D2780058C6CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2DB51C4E1523E2660055CE3C /* setting.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = setting.js; sourceTree = "<group>"; };
+		2DB51C4F1523E2660055CE3C /* space_kana_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana_bk.png; sourceTree = "<group>"; };
+		2DB51C531523E2AD0055CE3C /* iphone4_setting.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4_setting.css; sourceTree = "<group>"; };
 		2DB6FB9014C79D7900532D47 /* osk_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk_icon.png; sourceTree = "<group>"; };
 		2DCFEA021517929C00253EBA /* PurchaseCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseCheck.h; sourceTree = "<group>"; };
 		2DCFEA031517929C00253EBA /* PurchaseCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseCheck.m; sourceTree = "<group>"; };
@@ -207,6 +213,9 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2DB51C531523E2AD0055CE3C /* iphone4_setting.css */,
+				2DB51C4E1523E2660055CE3C /* setting.js */,
+				2DB51C4F1523E2660055CE3C /* space_kana_bk.png */,
 				2DFA1371151BD06800458B97 /* setting_icon.png */,
 				2DFA136F151BCED200458B97 /* setting.html */,
 				2DFA136D151BC28500458B97 /* redo_icon.png */,
@@ -314,6 +323,8 @@
 				2DFA136E151BC28500458B97 /* redo_icon.png in Resources */,
 				2DFA1370151BCED200458B97 /* setting.html in Resources */,
 				2DFA1372151BD06800458B97 /* setting_icon.png in Resources */,
+				2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */,
+				2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +365,7 @@
 				2D71279914CF61F300B7CC9A /* data1.js in Sources */,
 				2DD65DEB14D20820007EE293 /* data1k.js in Sources */,
 				2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */,
+				2DB51C501523E2660055CE3C /* setting.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
