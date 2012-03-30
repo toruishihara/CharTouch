@@ -81,16 +81,21 @@ body {
 #resultMessage {
 	position: absolute;
 	top: 120px;
-	left: 50px;
-	width: 610px;
+	left: 10px;
+	width: 280px;
 	height: 64px;
-	color: yellow;
+	color: blue;
 	font-size: medium;
     display: none;
+    background-image: url('ship_plate.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
 }
 #result {
-	color: white;
+	color: blue;
 	font-size: 48px;
+    padding-left: 80px;
 }
 
 .fade {
@@ -121,3 +126,25 @@ body {
 	90% { -webkit-transform: scale(0); }
 	100% { -webkit-transform: scale(0); }
 }
+
+@-webkit-keyframes 'slidein' {
+	0% { -webkit-transform: translate(320px,0px); }
+	100% { -webkit-transform: translate(0,0); }
+}
+
+#tryAgain {
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	/* width: 200px;
+	height: 40px; */
+    background-color:#002233;
+	color: white;
+	font-size: large;
+
+}
+#tryAgain:hover {
+    background-color:#008899;
+    transitin:background-color 0.5s linear;
+}
+

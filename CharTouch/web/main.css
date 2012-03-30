@@ -106,3 +106,18 @@ body {
 	100% { -webkit-transform: scale(0); }
 }
 
+#tryAgain {
+    background-color:#002233;
+    position: absolute;
+	top: 220px;
+	left: 50px;
+	width: 610px;
+	height: 64px;
+	color: white;
+	font-size: medium;
+
+}
+#tryAgain:hover {
+    background-color:#008899;
+    transitin:background-color 0.5s linear;
+}

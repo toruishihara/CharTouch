@@ -1,4 +1,4 @@
-var num_quiz = 10;
+var num_quiz = 1;
 var startTime = 0;	// 開始時間
 var count = 0;	// 旗を取った数
 var font_size = 32;
@@ -6,9 +6,6 @@ var answer_array_width = 20;
 var answer_array_height = 20;
 var answer_offset = 120;
 var default_grade = "1n_46";
-//var data_prefix = "1n";
-//var all_quiz_num = 46;
-//var timerID = null;	// タイマーID
 var mat;// = new Array(20*15);
 var mat_base = 20;
 var msg = document.getElementById("quizMessage");
@@ -41,7 +38,6 @@ console.error = console.log;
 full.addEventListener("touchstart", test_func,true);
 document.getElementById("restart").addEventListener("touchstart", game_start, true);
 document.getElementById("setting").addEventListener("touchstart", game_setting, true);
-document.getElementById("setting").addEventListener("click", game_setting, true);
 document.getElementById("backbtn").addEventListener("touchstart", game_back, true);
 
 document.getElementById("quizMessage").style.display = "none";
@@ -65,6 +61,8 @@ function test_func(evt) {
 
 function game_title() {
     console.log("game_title");
+    document.getElementById("tryAgain").style.display = "none";
+	document.getElementById("resultMessage").style.display = "none";
 
     var title = document.getElementById("titleLogo");
     setTimeout(function(){
@@ -78,6 +76,8 @@ function game_title() {
 function game_start() {
     count = 0;
     console.log("game_start innerWidth=" + window.innerWidth);
+    document.getElementById("tryAgain").style.display = "none";
+	document.getElementById("resultMessage").style.display = "none";
     if (window.innerWidth <= 320) {
         isIphone = 1;
         font_size = 24;
@@ -99,7 +99,6 @@ function game_start() {
     quizs = new Array(num_quiz);
     results = new Array(num_quiz);
     used_quiz = new Array(all_quiz_num);
-	document.getElementById("resultMessage").style.display = "none";
 
     for(var i=0; i<num_quiz; i++){
         var old = document.getElementById("f"+i);
@@ -210,6 +209,7 @@ function hideQuizMessage() {
 }
 
 function showResult() {
+    console.log("showResult");
 	var obj = document.getElementById("result");
 	var msg = document.getElementById("resultMessage");
     
@@ -221,5 +221,6 @@ function showResult() {
     }
 	obj.innerHTML = sam*100/num_quiz;
 	msg.style.display = "inline";
+    document.getElementById("tryAgain").style.display = "inline";
 }
 

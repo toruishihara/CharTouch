@@ -12,8 +12,9 @@
     -webkit-border-top-right-radius: 5px;
     -webkit-border-bottom-left-radius: 20px;
     -webkit-border-bottom-right-radius: 5px;
-    top: 8px;
+    top: 4px;
     left: 10px;
+    height: 32px;
     background-color: white;
 }
 #titleLogo {
