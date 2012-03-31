@@ -10,7 +10,7 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>space_kana_icon.png</string>
+		<string>space_math_icon.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -18,7 +18,7 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>space_kana_icon.png</string>
+				<string>space_math_icon.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<false/>

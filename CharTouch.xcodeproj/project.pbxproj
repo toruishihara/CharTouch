@@ -14,16 +14,18 @@
 		2D29E6CF14C666C500DA44CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6CE14C666C500DA44CB /* main.m */; };
 		2D29E6D314C666C500DA44CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6D214C666C500DA44CB /* AppDelegate.m */; };
 		2D29E6DC14C666C500DA44CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6DB14C666C500DA44CB /* ViewController.m */; };
-		2D29E6E414C666C600DA44CB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6E314C666C600DA44CB /* SenTestingKit.framework */; };
-		2D29E6E514C666C600DA44CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C214C666C500DA44CB /* UIKit.framework */; };
-		2D29E6E614C666C600DA44CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C414C666C500DA44CB /* Foundation.framework */; };
-		2D29E6EE14C666C600DA44CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E6EC14C666C600DA44CB /* InfoPlist.strings */; };
-		2D29E6F114C666C600DA44CB /* CharTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6F014C666C600DA44CB /* CharTouchTests.m */; };
+		2D6EC5B8152683D000C384C6 /* space_math_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8915264C5A0055CE3C /* space_math_icon.png */; };
+		2D6EC5B91526890F00C384C6 /* space_math_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C951526592A0055CE3C /* space_math_bk.png */; };
+		2D6EC5BA1526890F00C384C6 /* space_math.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C961526592A0055CE3C /* space_math.png */; };
+		2D6EC5BB1526890F00C384C6 /* data1m.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8B15264E6D0055CE3C /* data1m.js */; };
 		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
 		2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4F1523E2660055CE3C /* space_kana_bk.png */; };
 		2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C531523E2AD0055CE3C /* iphone4_setting.css */; };
 		2DB51C5E152525FC0055CE3C /* setting.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4E1523E2660055CE3C /* setting.js */; };
 		2DB51C6015262F240055CE3C /* ship_plate.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C5F15262F240055CE3C /* ship_plate.png */; };
+		2DB51C8E15264E6D0055CE3C /* data1m.js in Sources */ = {isa = PBXBuildFile; fileRef = 2DB51C8B15264E6D0055CE3C /* data1m.js */; };
+		2DB51C9015264E6D0055CE3C /* index_j.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8C15264E6D0055CE3C /* index_j.html */; };
+		2DB51C9215264E6D0055CE3C /* setting_j.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8D15264E6D0055CE3C /* setting_j.html */; };
 		2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6FB9014C79D7900532D47 /* osk_icon.png */; };
 		2DC16BA914D0CE75000A3176 /* data1.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
 		2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFEA031517929C00253EBA /* PurchaseCheck.m */; };
@@ -44,18 +46,8 @@
 		2DFA1372151BD06800458B97 /* setting_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA1371151BD06800458B97 /* setting_icon.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2D29E6E714C666C600DA44CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2D29E6B514C666C500DA44CB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D29E6BD14C666C500DA44CB;
-			remoteInfo = CharTouch;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		2D29E6BE14C666C500DA44CB /* カタカナ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "カタカナ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D29E6BE14C666C500DA44CB /* Space Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D29E6C214C666C500DA44CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D29E6C414C666C500DA44CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2D29E6C614C666C500DA44CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,7 +59,6 @@
 		2D29E6D214C666C500DA44CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D29E6DA14C666C500DA44CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2D29E6DB14C666C500DA44CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2D29E6E214C666C600DA44CB /* CharTouchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharTouchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D29E6E314C666C600DA44CB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2D29E6EB14C666C600DA44CB /* CharTouchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CharTouchTests-Info.plist"; sourceTree = "<group>"; };
 		2D29E6ED14C666C600DA44CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -79,6 +70,12 @@
 		2DB51C4F1523E2660055CE3C /* space_kana_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana_bk.png; sourceTree = "<group>"; };
 		2DB51C531523E2AD0055CE3C /* iphone4_setting.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4_setting.css; sourceTree = "<group>"; };
 		2DB51C5F15262F240055CE3C /* ship_plate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship_plate.png; sourceTree = "<group>"; };
+		2DB51C8915264C5A0055CE3C /* space_math_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_math_icon.png; sourceTree = "<group>"; };
+		2DB51C8B15264E6D0055CE3C /* data1m.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1m.js; sourceTree = "<group>"; };
+		2DB51C8C15264E6D0055CE3C /* index_j.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_j.html; sourceTree = "<group>"; };
+		2DB51C8D15264E6D0055CE3C /* setting_j.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = setting_j.html; sourceTree = "<group>"; };
+		2DB51C951526592A0055CE3C /* space_math_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_math_bk.png; sourceTree = "<group>"; };
+		2DB51C961526592A0055CE3C /* space_math.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_math.png; sourceTree = "<group>"; };
 		2DB6FB9014C79D7900532D47 /* osk_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osk_icon.png; sourceTree = "<group>"; };
 		2DCFEA021517929C00253EBA /* PurchaseCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseCheck.h; sourceTree = "<group>"; };
 		2DCFEA031517929C00253EBA /* PurchaseCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseCheck.m; sourceTree = "<group>"; };
@@ -111,22 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D29E6DE14C666C600DA44CB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D29E6E414C666C600DA44CB /* SenTestingKit.framework in Frameworks */,
-				2D29E6E514C666C600DA44CB /* UIKit.framework in Frameworks */,
-				2D29E6E614C666C600DA44CB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2D29E6B314C666C500DA44CB = {
 			isa = PBXGroup;
 			children = (
+				2DB51C8915264C5A0055CE3C /* space_math_icon.png */,
 				2DCFEA0E151AA35700253EBA /* Default@2x.png */,
 				2DCFEA0C151AA34F00253EBA /* Default.png */,
 				2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */,
@@ -142,8 +130,7 @@
 		2D29E6BF14C666C500DA44CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D29E6BE14C666C500DA44CB /* カタカナ.app */,
-				2D29E6E214C666C600DA44CB /* CharTouchTests.octest */,
+				2D29E6BE14C666C500DA44CB /* Space Math.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +194,11 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2DB51C951526592A0055CE3C /* space_math_bk.png */,
+				2DB51C961526592A0055CE3C /* space_math.png */,
+				2DB51C8B15264E6D0055CE3C /* data1m.js */,
+				2DB51C8C15264E6D0055CE3C /* index_j.html */,
+				2DB51C8D15264E6D0055CE3C /* setting_j.html */,
 				2DF1DF3814C7987200C4DB4E /* index.html */,
 				2DFA136F151BCED200458B97 /* setting.html */,
 				2DF1DF3914C7987200C4DB4E /* main.css */,
@@ -231,9 +223,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D29E6BD14C666C500DA44CB /* カタカナ */ = {
+		2D29E6BD14C666C500DA44CB /* Math_T */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "カタカナ" */;
+			buildConfigurationList = 2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "Math_T" */;
 			buildPhases = (
 				2D29E6BA14C666C500DA44CB /* Sources */,
 				2D29E6BB14C666C500DA44CB /* Frameworks */,
@@ -243,29 +235,10 @@
 			);
 			dependencies = (
 			);
-			name = "カタカナ";
+			name = Math_T;
 			productName = CharTouch;
-			productReference = 2D29E6BE14C666C500DA44CB /* カタカナ.app */;
+			productReference = 2D29E6BE14C666C500DA44CB /* Space Math.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2D29E6E114C666C600DA44CB /* CharTouchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D29E6F714C666C600DA44CB /* Build configuration list for PBXNativeTarget "CharTouchTests" */;
-			buildPhases = (
-				2D29E6DD14C666C600DA44CB /* Sources */,
-				2D29E6DE14C666C600DA44CB /* Frameworks */,
-				2D29E6DF14C666C600DA44CB /* Resources */,
-				2D29E6E014C666C600DA44CB /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2D29E6E814C666C600DA44CB /* PBXTargetDependency */,
-			);
-			name = CharTouchTests;
-			productName = CharTouchTests;
-			productReference = 2D29E6E214C666C600DA44CB /* CharTouchTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -287,8 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D29E6BD14C666C500DA44CB /* カタカナ */,
-				2D29E6E114C666C600DA44CB /* CharTouchTests */,
+				2D29E6BD14C666C500DA44CB /* Math_T */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6EC5B91526890F00C384C6 /* space_math_bk.png in Resources */,
+				2D6EC5BA1526890F00C384C6 /* space_math.png in Resources */,
+				2D6EC5BB1526890F00C384C6 /* data1m.js in Resources */,
 				2DB51C5E152525FC0055CE3C /* setting.js in Resources */,
 				2DD65DED14D20876007EE293 /* data1k.js in Resources */,
 				2DC16BA914D0CE75000A3176 /* data1.js in Resources */,
@@ -320,34 +295,13 @@
 				2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */,
 				2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */,
 				2DB51C6015262F240055CE3C /* ship_plate.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D29E6DF14C666C600DA44CB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D29E6EE14C666C600DA44CB /* InfoPlist.strings in Resources */,
+				2DB51C9015264E6D0055CE3C /* index_j.html in Resources */,
+				2DB51C9215264E6D0055CE3C /* setting_j.html in Resources */,
+				2D6EC5B8152683D000C384C6 /* space_math_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2D29E6E014C666C600DA44CB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D29E6BA14C666C500DA44CB /* Sources */ = {
@@ -358,26 +312,11 @@
 				2D29E6D314C666C500DA44CB /* AppDelegate.m in Sources */,
 				2D29E6DC14C666C500DA44CB /* ViewController.m in Sources */,
 				2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D29E6DD14C666C600DA44CB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D29E6F114C666C600DA44CB /* CharTouchTests.m in Sources */,
+				2DB51C8E15264E6D0055CE3C /* data1m.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2D29E6E814C666C600DA44CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2D29E6BD14C666C500DA44CB /* カタカナ */;
-			targetProxy = 2D29E6E714C666C600DA44CB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2D29E6CB14C666C500DA44CB /* InfoPlist.strings */ = {
@@ -462,7 +401,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Space Math";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -480,45 +419,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Space Math";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		2D29E6F814C666C600DA44CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CharTouch.app/CharTouch";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
-				INFOPLIST_FILE = "CharTouchTests/CharTouchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		2D29E6F914C666C600DA44CB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CharTouch.app/CharTouch";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
-				INFOPLIST_FILE = "CharTouchTests/CharTouchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -534,20 +439,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "カタカナ" */ = {
+		2D29E6F414C666C600DA44CB /* Build configuration list for PBXNativeTarget "Math_T" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D29E6F514C666C600DA44CB /* Debug */,
 				2D29E6F614C666C600DA44CB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D29E6F714C666C600DA44CB /* Build configuration list for PBXNativeTarget "CharTouchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D29E6F814C666C600DA44CB /* Debug */,
-				2D29E6F914C666C600DA44CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
