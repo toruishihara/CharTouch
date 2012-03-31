@@ -1,11 +1,11 @@
-var num_quiz = 1;
+var num_quiz = 10;
 var startTime = 0;	// 開始時間
 var count = 0;	// 旗を取った数
 var font_size = 32;
 var answer_array_width = 20;
 var answer_array_height = 20;
 var answer_offset = 120;
-var default_grade = "1n_46";
+var default_grade = "1m_20";
 var mat;// = new Array(20*15);
 var mat_base = 20;
 var msg = document.getElementById("quizMessage");
@@ -61,7 +61,6 @@ function test_func(evt) {
 
 function game_title() {
     console.log("game_title");
-    document.getElementById("tryAgain").style.display = "none";
 	document.getElementById("resultMessage").style.display = "none";
 
     var title = document.getElementById("titleLogo");
@@ -76,7 +75,6 @@ function game_title() {
 function game_start() {
     count = 0;
     console.log("game_start innerWidth=" + window.innerWidth);
-    document.getElementById("tryAgain").style.display = "none";
 	document.getElementById("resultMessage").style.display = "none";
     if (window.innerWidth <= 320) {
         isIphone = 1;
@@ -94,6 +92,7 @@ function game_start() {
         
     data_prefix = grade.split("_")[0];
     all_quiz_num = grade.split("_")[1];
+    console.log("pre=" + data_prefix + " qn=" + all_quiz_num);
 
     mat = new Array(20*15);
     quizs = new Array(num_quiz);
@@ -189,23 +188,10 @@ function nextQuiz() {
 	var msg = document.getElementById("quizMessage");
     var d = new Date();
 
-    //console.log("nextQuix in " + msg.hideTime);
     qz = all_quiz[data_prefix+quizs[count]].split(",");
     obj.innerHTML = qz[1];
 	msg.style.display = "inline";
-	//setTimeout(hideQuizMessage, 60000);
-    //console.log("nextQuix out " + msg.hideTime);
-}
-
-function hideQuizMessage() {
-	var msg = document.getElementById("quizMessage");
-    var d = new Date();
-    console.log("hideQuizMessage in " + d.getTime() );
-
-	if (msg.hideTime <= d.getTime() ) {
-        msg.style.display = "none";
-    }
-    console.log("hideQuizMessage out " + d.getTime() );
+    document.getElementById("qhelp").className = "fade";
 }
 
 function showResult() {
@@ -221,6 +207,5 @@ function showResult() {
     }
 	obj.innerHTML = sam*100/num_quiz;
 	msg.style.display = "inline";
-    document.getElementById("tryAgain").style.display = "inline";
 }
 

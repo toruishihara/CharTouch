@@ -4,31 +4,28 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="user-scalable=no,initial-scale=1" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>スペースカタカナ設定</title>
+		<title>Space Math setting</title>
         <link rel="stylesheet" media="screen and (max-device-width: 320px)" href="iphone4_setting.css" />
         <link rel="stylesheet" media="screen and (min-device-width: 321px) and (max-device-width: 768px)" href="main.css" />
 	</head>
     <body onload="onload_setting();">
         <form>
             <div id="header">
-                <button id="backbtn" type=button>もどる</button><br><br>
+                <button id="backbtn" type=button>Back</button><br><br>
             </div>
-            <div id="titleLogo"><img src="space_kana_bk.png" width=280></img></div>
+            <div id="titleLogo"><img src="space_math_bk.png" width=280></img></div>
             Ver 1.0.0<br>by Toru Ishihara<br><br>
-            <!--
-            アプリケーションの使い方<br>
-            問題が上に出ます。カタカナを、見つけて、タッチしてください。
-            全部、間違えずに、タッチできると、１００点です。
-            -->
-            もんだいのしゅるい
+            How to play<br>
+            Question displays on top screen. Find the answer and touch it!<br>
+            Full socre is 100.<br>
+            Type of question
             <select id="grade">
-                <option value="1n_46">カタカナ</option>
-                <option value="1k_97">一年生の漢字</option>
-                <option value="2k_100">二年生の漢字</option>
-                <option value="3k_100">三年生の漢字</option>
-                <option value="4k_100">四年生の漢字</option>
-                <option value="5k_100">五年生の漢字</option>
-                <option value="6k_80">六年生の漢字</option>
+                <option value="1m_20">Addition basic</option>
+                <option value="2m_20">Subtraction basic</option>
+                <option value="3m_30">Addition</option>
+                <option value="4m_30">Subtraction</option>
+                <option value="5m_30">Multiplication</option>
+                <option value="6m_30">Division</option>
             </select>
              
         </form>
