@@ -15,8 +15,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    webView.opaque = YES;
 }
 
 - (void)dealloc
