@@ -21,6 +21,7 @@
 		2D6EC5BA1526890F00C384C6 /* space_math.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C961526592A0055CE3C /* space_math.png */; };
 		2D6EC5BB1526890F00C384C6 /* data1m.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8B15264E6D0055CE3C /* data1m.js */; };
 		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
+		2D9C1655152BB383004CE014 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0C151AA34F00253EBA /* Default.png */; };
 		2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4F1523E2660055CE3C /* space_kana_bk.png */; };
 		2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C531523E2AD0055CE3C /* iphone4_setting.css */; };
 		2DB51C5E152525FC0055CE3C /* setting.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4E1523E2660055CE3C /* setting.js */; };
@@ -33,7 +34,6 @@
 		2DCFEA07151799FA00253EBA /* spaceback.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA06151799FA00253EBA /* spaceback.png */; };
 		2DCFEA09151A84A200253EBA /* space_kana.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA08151A84A200253EBA /* space_kana.png */; };
 		2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */; };
-		2DCFEA0D151AA34F00253EBA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0C151AA34F00253EBA /* Default.png */; };
 		2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0E151AA35700253EBA /* Default@2x.png */; };
 		2DD65DED14D20876007EE293 /* data1k.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3614C7987200C4DB4E /* galaxy.png */; };
@@ -288,7 +288,6 @@
 				2DCFEA07151799FA00253EBA /* spaceback.png in Resources */,
 				2DCFEA09151A84A200253EBA /* space_kana.png in Resources */,
 				2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */,
-				2DCFEA0D151AA34F00253EBA /* Default.png in Resources */,
 				2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */,
 				2DFA136E151BC28500458B97 /* redo_icon.png in Resources */,
 				2DFA1370151BCED200458B97 /* setting.html in Resources */,
@@ -301,6 +300,7 @@
 				2D6EC5B8152683D000C384C6 /* space_math_icon.png in Resources */,
 				2D6144F1152AB18B007A3631 /* ViewController_iPad.xib in Resources */,
 				2D6144F2152AB18B007A3631 /* ViewController_iPhone.xib in Resources */,
+				2D9C1655152BB383004CE014 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

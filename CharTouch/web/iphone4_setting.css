@@ -4,19 +4,23 @@
 	left: 0px;
 	width: 320px;
 	height: 40px;
-    background-color: black;
+	background-image:url(iPhone4_header.png);
+    background-size: 320px 40px
 }
 #backbtn {
 	position: absolute;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 5px;
-    -webkit-border-bottom-left-radius: 20px;
-    -webkit-border-bottom-right-radius: 5px;
     top: 4px;
-    left: 10px;
+    left: 5px;
     height: 32px;
-    background-color: white;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    border-width: 0;
 }
 #titleLogo {
     padding-top: 50px;
+}
+#grade {
+    height: 32px;
+    font-size: large;
 }
