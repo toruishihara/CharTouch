@@ -1,0 +1,8 @@
+Space Math is a simple educational application for kinder to 3rd grade math. Kids can enjoy this math game with space theme and actions.
+
+It includes basic math operations, addition, subtraction, multiplication and division.
+Once the game starts, problem will shows on top of screen, kid pick up the answer from candidates shows on main part of screen. If kid picks correct answer, the candidate will disappear. If kid picks wrong one, the candidate shakes.
+After kid finish 10 questions, score is shown. Max score is 100.
+
+Enjoy this game.
+

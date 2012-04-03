@@ -7,17 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+
 #ifdef PURCHASE_CHECK
 #import "PurchaseCheck.h"
 #endif
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UIWebViewDelegate> {
-    UIWebView *webView;
+@class ViewController;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
 #ifdef PURCHASE_CHECK
     PurchaseCheck *purchase;
 #endif
 }
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ViewController *viewController;
 
 @end

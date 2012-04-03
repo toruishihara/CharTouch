@@ -7,49 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-
-// debug console redirection
-- (BOOL)webView:(UIWebView *)webView2 
-shouldStartLoadWithRequest:(NSURLRequest *)request 
- navigationType:(UIWebViewNavigationType)navigationType {
-    
-    NSString *requestString = [[[request URL] absoluteString] stringByReplacingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
-    //NSLog(requestString);
-    
-    if ([requestString hasPrefix:@"ios-log:"]) {
-        NSString* logString = [[requestString componentsSeparatedByString:@":#iOS#"] objectAtIndex:1];
-        NSLog(@"UIWebView console: %@", logString);
-        return NO;
-    }
-    
-    return YES;
-}
-// debug console redirection
-
-- (void)load
-{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
-    
-}
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blackColor];
+    // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
+    } else {
+        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
+    }
+    self.window.rootViewController = self.viewController;
+    //[self.window addSubview:self.viewController.webView];
+    [self.window makeKeyAndVisible];
 
-	webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-    webView.backgroundColor = [UIColor blackColor];
-    [webView setDelegate:self];
-    
-    [self.window addSubview:webView];
-    [self load];
-    
-    [self.window makeKeyAndVisible];  
 #ifdef PURCHASE_CHECK
     purchase = [[PurchaseCheck alloc] init];
 #endif
@@ -78,7 +55,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
-    [self load];
+    //[self.myWebViewController.webView load];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -90,10 +67,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-#ifdef PURCHASE_CHECK
-    [purchase release];
-#endif
-
 }
 
 @end
