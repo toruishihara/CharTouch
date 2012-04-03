@@ -35,4 +35,5 @@ function grade_change(e) {
     
     var grade = document.getElementById("grade").value;
     window.sessionStorage.setItem(e.target.id, e.target.value);
+    location.href="index.html";
 }
