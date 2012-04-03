@@ -131,8 +131,9 @@ function game_start() {
         mat[mat_base + (y+1)*answer_array_width + x] = 1;
         mat[mat_base + (y+1)*answer_array_width + x+1] = 1;
         mat[mat_base + (y+1)*answer_array_width + x-1] = 1;
-        ele.style.left = (x * font_size)+"px";
+        ele.style.left = 10 + (x * font_size)+"px";
         ele.style.top = answer_offset + (y * font_size)+"px";
+        ele.className = 'dropin';
 
         ele.addEventListener("touchstart", touchHandler, true);
         ele.addEventListener("click", touchHandler, true);

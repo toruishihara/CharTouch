@@ -75,10 +75,13 @@ body {
     font-weight: 900;
 	font-size: large;
     display: none;
+	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
 }
 #quiz {
+    font-family: 'Helvetica';
+    font-weight: 900;
 	color: white;
-	font-size: 22px;
+	font-size: 32px;
 }
 #resultMessage {
 	position: absolute;
@@ -87,6 +90,7 @@ body {
 	width: 280px;
 	height: 64px;
 	color: blue;
+    font-family: 'Helvetica';
 	font-size: medium;
     display: none;
     background-image: url('ship_plate.png');
@@ -97,6 +101,8 @@ body {
 }
 #result {
 	color: blue;
+    font-family: 'Helvetica';
+    font-weight: 900;
 	font-size: 48px;
 }
 
@@ -131,6 +137,14 @@ body {
 
 @-webkit-keyframes 'slidein' {
 	0% { -webkit-transform: translate(320px,0px); }
+	100% { -webkit-transform: translate(0,0); }
+}
+
+.dropin {
+	-webkit-animation: 'dropin' 2s linear 0s 1 normal;
+}
+@-webkit-keyframes 'dropin' {
+	0% { -webkit-transform: translate(0px,-480px); }
 	100% { -webkit-transform: translate(0,0); }
 }
 

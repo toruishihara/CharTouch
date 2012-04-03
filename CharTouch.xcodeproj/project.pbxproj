@@ -22,6 +22,7 @@
 		2D6EC5BB1526890F00C384C6 /* data1m.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8B15264E6D0055CE3C /* data1m.js */; };
 		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
 		2D9C1655152BB383004CE014 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0C151AA34F00253EBA /* Default.png */; };
+		2D9C1657152BBA4F004CE014 /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C1656152BBA4F004CE014 /* ufo.png */; };
 		2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4F1523E2660055CE3C /* space_kana_bk.png */; };
 		2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C531523E2AD0055CE3C /* iphone4_setting.css */; };
 		2DB51C5E152525FC0055CE3C /* setting.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4E1523E2660055CE3C /* setting.js */; };
@@ -68,6 +69,7 @@
 		2D614585152ABEDB007A3631 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D71279814CF61F300B7CC9A /* data1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1.js; sourceTree = "<group>"; };
 		2D911C4F14F8D2780058C6CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2D9C1656152BBA4F004CE014 /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufo.png; sourceTree = "<group>"; };
 		2DB51C4E1523E2660055CE3C /* setting.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = setting.js; sourceTree = "<group>"; };
 		2DB51C4F1523E2660055CE3C /* space_kana_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana_bk.png; sourceTree = "<group>"; };
 		2DB51C531523E2AD0055CE3C /* iphone4_setting.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4_setting.css; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2D9C1656152BBA4F004CE014 /* ufo.png */,
 				2DB51C951526592A0055CE3C /* space_math_bk.png */,
 				2DB51C961526592A0055CE3C /* space_math.png */,
 				2DB51C8B15264E6D0055CE3C /* data1m.js */,
@@ -301,6 +304,7 @@
 				2D6144F1152AB18B007A3631 /* ViewController_iPad.xib in Resources */,
 				2D6144F2152AB18B007A3631 /* ViewController_iPhone.xib in Resources */,
 				2D9C1655152BB383004CE014 /* Default.png in Resources */,
+				2D9C1657152BBA4F004CE014 /* ufo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
