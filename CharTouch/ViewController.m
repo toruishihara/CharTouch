@@ -18,6 +18,7 @@
 
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    [webView setDelegate:self];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -35,5 +36,18 @@
 	//[super dealloc];
 }
 
+// UIWebView delegate
+// debug console redirection
+- (BOOL)webView:(UIWebView *)webView2 
+shouldStartLoadWithRequest:(NSURLRequest *)request 
+ navigationType:(UIWebViewNavigationType)navigationType {
+    NSString *requestString = [[[request URL] absoluteString] stringByReplacingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    if ([requestString hasPrefix:@"ios-log:"]) {
+        NSString* logString = [[requestString componentsSeparatedByString:@":#iOS#"] objectAtIndex:1];
+        NSLog(@"UIWebView console: %@", logString);
+        return NO;
+    }
+    return YES;
+}
 @end
 

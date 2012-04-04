@@ -83,7 +83,7 @@ function game_start() {
         answer_array_height = 13;
         answer_offset = 60;
     }
-    var grade = window.sessionStorage["grade"];
+    var grade = window.localStorage["grade"];
     console.log("grade=" + grade);
     if (grade==undefined || grade.length < 2) {
         console.log("grade=default");

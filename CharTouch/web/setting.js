@@ -18,8 +18,8 @@ document.getElementById("backbtn").addEventListener("touchstart", game_back, tru
 document.getElementById("grade").addEventListener("change", grade_change, true);
 
 function onload_setting() {
-    console.log("onload_setting");
-    var grade = window.sessionStorage["grade"];
+    var grade = window.localStorage["grade"];
+    console.log("onload_setting grade=" + grade);
     if (grade.length >= 2) {
         document.getElementById("grade").value = grade;
     }
@@ -34,6 +34,6 @@ function grade_change(e) {
     console.log("grade change " + e.target.id + ":" + e.target.value);
     
     var grade = document.getElementById("grade").value;
-    window.sessionStorage.setItem(e.target.id, e.target.value);
+    window.localStorage.setItem(e.target.id, e.target.value);
     location.href="index.html";
 }
