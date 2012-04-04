@@ -30,13 +30,11 @@
 		2DB51C9015264E6D0055CE3C /* index_j.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8C15264E6D0055CE3C /* index_j.html */; };
 		2DB51C9215264E6D0055CE3C /* setting_j.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8D15264E6D0055CE3C /* setting_j.html */; };
 		2DB6FB9114C79D7900532D47 /* osk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6FB9014C79D7900532D47 /* osk_icon.png */; };
-		2DC16BA914D0CE75000A3176 /* data1.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D71279814CF61F300B7CC9A /* data1.js */; };
 		2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFEA031517929C00253EBA /* PurchaseCheck.m */; };
 		2DCFEA07151799FA00253EBA /* spaceback.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA06151799FA00253EBA /* spaceback.png */; };
 		2DCFEA09151A84A200253EBA /* space_kana.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA08151A84A200253EBA /* space_kana.png */; };
 		2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */; };
 		2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0E151AA35700253EBA /* Default@2x.png */; };
-		2DD65DED14D20876007EE293 /* data1k.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3614C7987200C4DB4E /* galaxy.png */; };
 		2DF1DF3D14C7987200C4DB4E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3814C7987200C4DB4E /* index.html */; };
 		2DF1DF3E14C7987200C4DB4E /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3914C7987200C4DB4E /* main.css */; };
@@ -279,8 +277,6 @@
 				2D6EC5BA1526890F00C384C6 /* space_math.png in Resources */,
 				2D6EC5BB1526890F00C384C6 /* data1m.js in Resources */,
 				2DB51C5E152525FC0055CE3C /* setting.js in Resources */,
-				2DD65DED14D20876007EE293 /* data1k.js in Resources */,
-				2DC16BA914D0CE75000A3176 /* data1.js in Resources */,
 				2DF1DF4114C798CD00C4DB4E /* game.js in Resources */,
 				2D29E6CD14C666C500DA44CB /* InfoPlist.strings in Resources */,
 				2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */,
