@@ -14,6 +14,8 @@
 		2D29E6CF14C666C500DA44CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6CE14C666C500DA44CB /* main.m */; };
 		2D29E6D314C666C500DA44CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6D214C666C500DA44CB /* AppDelegate.m */; };
 		2D29E6DC14C666C500DA44CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6DB14C666C500DA44CB /* ViewController.m */; };
+		2D55C162152CFCA1000E2FA5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C161152CFCA1000E2FA5 /* Default@2x.png */; };
+		2D55C164152CFE45000E2FA5 /* iPhone4_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C163152CFE45000E2FA5 /* iPhone4_header.png */; };
 		2D6144F1152AB18B007A3631 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144ED152AB18B007A3631 /* ViewController_iPad.xib */; };
 		2D6144F2152AB18B007A3631 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144EF152AB18B007A3631 /* ViewController_iPhone.xib */; };
 		2D6EC5B8152683D000C384C6 /* space_math_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8915264C5A0055CE3C /* space_math_icon.png */; };
@@ -21,9 +23,7 @@
 		2D6EC5BA1526890F00C384C6 /* space_math.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C961526592A0055CE3C /* space_math.png */; };
 		2D6EC5BB1526890F00C384C6 /* data1m.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8B15264E6D0055CE3C /* data1m.js */; };
 		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
-		2D9C1655152BB383004CE014 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0C151AA34F00253EBA /* Default.png */; };
 		2D9C1657152BBA4F004CE014 /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C1656152BBA4F004CE014 /* ufo.png */; };
-		2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4F1523E2660055CE3C /* space_kana_bk.png */; };
 		2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C531523E2AD0055CE3C /* iphone4_setting.css */; };
 		2DB51C5E152525FC0055CE3C /* setting.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4E1523E2660055CE3C /* setting.js */; };
 		2DB51C6015262F240055CE3C /* ship_plate.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C5F15262F240055CE3C /* ship_plate.png */; };
@@ -33,8 +33,6 @@
 		2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFEA031517929C00253EBA /* PurchaseCheck.m */; };
 		2DCFEA07151799FA00253EBA /* spaceback.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA06151799FA00253EBA /* spaceback.png */; };
 		2DCFEA09151A84A200253EBA /* space_kana.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA08151A84A200253EBA /* space_kana.png */; };
-		2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */; };
-		2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA0E151AA35700253EBA /* Default@2x.png */; };
 		2DF1DF3B14C7987200C4DB4E /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3614C7987200C4DB4E /* galaxy.png */; };
 		2DF1DF3D14C7987200C4DB4E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3814C7987200C4DB4E /* index.html */; };
 		2DF1DF3E14C7987200C4DB4E /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3914C7987200C4DB4E /* main.css */; };
@@ -46,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D29E6BE14C666C500DA44CB /* Space Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D29E6BE14C666C500DA44CB /* GalaxyMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxyMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D29E6C214C666C500DA44CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D29E6C414C666C500DA44CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2D29E6C614C666C500DA44CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +60,8 @@
 		2D29E6ED14C666C600DA44CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D29E6EF14C666C600DA44CB /* CharTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharTouchTests.h; sourceTree = "<group>"; };
 		2D29E6F014C666C600DA44CB /* CharTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharTouchTests.m; sourceTree = "<group>"; };
+		2D55C161152CFCA1000E2FA5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2D55C163152CFE45000E2FA5 /* iPhone4_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone4_header.png; sourceTree = "<group>"; };
 		2D6144EE152AB18B007A3631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		2D6144F0152AB18B007A3631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		2D614585152ABEDB007A3631 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,7 +69,6 @@
 		2D911C4F14F8D2780058C6CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2D9C1656152BBA4F004CE014 /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufo.png; sourceTree = "<group>"; };
 		2DB51C4E1523E2660055CE3C /* setting.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = setting.js; sourceTree = "<group>"; };
-		2DB51C4F1523E2660055CE3C /* space_kana_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana_bk.png; sourceTree = "<group>"; };
 		2DB51C531523E2AD0055CE3C /* iphone4_setting.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4_setting.css; sourceTree = "<group>"; };
 		2DB51C5F15262F240055CE3C /* ship_plate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship_plate.png; sourceTree = "<group>"; };
 		2DB51C8915264C5A0055CE3C /* space_math_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_math_icon.png; sourceTree = "<group>"; };
@@ -83,9 +82,6 @@
 		2DCFEA031517929C00253EBA /* PurchaseCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseCheck.m; sourceTree = "<group>"; };
 		2DCFEA06151799FA00253EBA /* spaceback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceback.png; sourceTree = "<group>"; };
 		2DCFEA08151A84A200253EBA /* space_kana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana.png; sourceTree = "<group>"; };
-		2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana_icon.png; sourceTree = "<group>"; };
-		2DCFEA0C151AA34F00253EBA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2DCFEA0E151AA35700253EBA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2DD65DEA14D20820007EE293 /* data1k.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1k.js; sourceTree = "<group>"; };
 		2DF1DF3614C7987200C4DB4E /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
 		2DF1DF3714C7987200C4DB4E /* game.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = game.js; sourceTree = "<group>"; };
@@ -115,10 +111,8 @@
 		2D29E6B314C666C500DA44CB = {
 			isa = PBXGroup;
 			children = (
+				2D55C161152CFCA1000E2FA5 /* Default@2x.png */,
 				2DB51C8915264C5A0055CE3C /* space_math_icon.png */,
-				2DCFEA0E151AA35700253EBA /* Default@2x.png */,
-				2DCFEA0C151AA34F00253EBA /* Default.png */,
-				2DCFEA0A151A9E9E00253EBA /* space_kana_icon.png */,
 				2D911C4F14F8D2780058C6CE /* StoreKit.framework */,
 				2DB6FB9014C79D7900532D47 /* osk_icon.png */,
 				2D29E6C814C666C500DA44CB /* CharTouch */,
@@ -131,7 +125,7 @@
 		2D29E6BF14C666C500DA44CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D29E6BE14C666C500DA44CB /* Space Math.app */,
+				2D29E6BE14C666C500DA44CB /* GalaxyMath.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +191,7 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2D55C163152CFE45000E2FA5 /* iPhone4_header.png */,
 				2D9C1656152BBA4F004CE014 /* ufo.png */,
 				2DB51C951526592A0055CE3C /* space_math_bk.png */,
 				2DB51C961526592A0055CE3C /* space_math.png */,
@@ -218,7 +213,6 @@
 				2DFA1371151BD06800458B97 /* setting_icon.png */,
 				2DFA136D151BC28500458B97 /* redo_icon.png */,
 				2DF1DF3614C7987200C4DB4E /* galaxy.png */,
-				2DB51C4F1523E2660055CE3C /* space_kana_bk.png */,
 			);
 			path = web;
 			sourceTree = "<group>";
@@ -240,7 +234,7 @@
 			);
 			name = Math_T;
 			productName = CharTouch;
-			productReference = 2D29E6BE14C666C500DA44CB /* Space Math.app */;
+			productReference = 2D29E6BE14C666C500DA44CB /* GalaxyMath.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -286,12 +280,9 @@
 				2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */,
 				2DCFEA07151799FA00253EBA /* spaceback.png in Resources */,
 				2DCFEA09151A84A200253EBA /* space_kana.png in Resources */,
-				2DCFEA0B151A9E9E00253EBA /* space_kana_icon.png in Resources */,
-				2DCFEA10151AA40200253EBA /* Default@2x.png in Resources */,
 				2DFA136E151BC28500458B97 /* redo_icon.png in Resources */,
 				2DFA1370151BCED200458B97 /* setting.html in Resources */,
 				2DFA1372151BD06800458B97 /* setting_icon.png in Resources */,
-				2DB51C511523E2660055CE3C /* space_kana_bk.png in Resources */,
 				2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */,
 				2DB51C6015262F240055CE3C /* ship_plate.png in Resources */,
 				2DB51C9015264E6D0055CE3C /* index_j.html in Resources */,
@@ -299,8 +290,9 @@
 				2D6EC5B8152683D000C384C6 /* space_math_icon.png in Resources */,
 				2D6144F1152AB18B007A3631 /* ViewController_iPad.xib in Resources */,
 				2D6144F2152AB18B007A3631 /* ViewController_iPhone.xib in Resources */,
-				2D9C1655152BB383004CE014 /* Default.png in Resources */,
 				2D9C1657152BBA4F004CE014 /* ufo.png in Resources */,
+				2D55C162152CFCA1000E2FA5 /* Default@2x.png in Resources */,
+				2D55C164152CFE45000E2FA5 /* iPhone4_header.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +411,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = "Space Math";
+				PRODUCT_NAME = GalaxyMath;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -437,7 +429,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
 				INFOPLIST_FILE = "CharTouch/CharTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = "Space Math";
+				PRODUCT_NAME = GalaxyMath;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;

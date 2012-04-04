@@ -27,7 +27,7 @@
 				<string>Default.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
@@ -46,6 +46,8 @@
 	<string>1.0</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

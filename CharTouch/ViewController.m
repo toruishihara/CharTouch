@@ -36,8 +36,7 @@
 	//[super dealloc];
 }
 
-// UIWebView delegate
-// debug console redirection
+#ifdef DEBUG
 - (BOOL)webView:(UIWebView *)webView2 
 shouldStartLoadWithRequest:(NSURLRequest *)request 
  navigationType:(UIWebViewNavigationType)navigationType {
@@ -49,5 +48,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     }
     return YES;
 }
+#endif
 @end
 
