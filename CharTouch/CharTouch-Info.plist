@@ -11,9 +11,6 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>space_math_icon.png</string>
-		<string>Default@2x.png</string>
-		<string>Default.png</string>
-		<string>Default.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -21,10 +18,8 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
+				<string>space_math_icon2.png</string>
 				<string>space_math_icon.png</string>
-				<string>Default@2x.png</string>
-				<string>Default.png</string>
-				<string>Default.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>

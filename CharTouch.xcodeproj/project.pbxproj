@@ -17,6 +17,9 @@
 		2D55C162152CFCA1000E2FA5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C161152CFCA1000E2FA5 /* Default@2x.png */; };
 		2D55C164152CFE45000E2FA5 /* iPhone4_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C163152CFE45000E2FA5 /* iPhone4_header.png */; };
 		2D55C166152D00D9000E2FA5 /* redo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C165152D00D9000E2FA5 /* redo_icon.png */; };
+		2D5B406C152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */; };
+		2D5B4070152D17DF00EBEA2F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406E152D17DF00EBEA2F /* Default.png */; };
+		2D5B4071152D17DF00EBEA2F /* space_math_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406F152D17DF00EBEA2F /* space_math_icon2.png */; };
 		2D6144F1152AB18B007A3631 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144ED152AB18B007A3631 /* ViewController_iPad.xib */; };
 		2D6144F2152AB18B007A3631 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144EF152AB18B007A3631 /* ViewController_iPhone.xib */; };
 		2D6EC5B8152683D000C384C6 /* space_math_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8915264C5A0055CE3C /* space_math_icon.png */; };
@@ -63,6 +66,9 @@
 		2D55C161152CFCA1000E2FA5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2D55C163152CFE45000E2FA5 /* iPhone4_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone4_header.png; sourceTree = "<group>"; };
 		2D55C165152D00D9000E2FA5 /* redo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redo_icon.png; sourceTree = "<group>"; };
+		2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CharTouch_iphone_dist.mobileprovision; sourceTree = "<group>"; };
+		2D5B406E152D17DF00EBEA2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2D5B406F152D17DF00EBEA2F /* space_math_icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_math_icon2.png; sourceTree = "<group>"; };
 		2D6144EE152AB18B007A3631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		2D6144F0152AB18B007A3631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		2D614585152ABEDB007A3631 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 		2D29E6B314C666C500DA44CB = {
 			isa = PBXGroup;
 			children = (
+				2D5B406E152D17DF00EBEA2F /* Default.png */,
+				2D5B406F152D17DF00EBEA2F /* space_math_icon2.png */,
+				2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */,
 				2D55C161152CFCA1000E2FA5 /* Default@2x.png */,
 				2DB51C8915264C5A0055CE3C /* space_math_icon.png */,
 				2D911C4F14F8D2780058C6CE /* StoreKit.framework */,
@@ -293,6 +302,9 @@
 				2D55C162152CFCA1000E2FA5 /* Default@2x.png in Resources */,
 				2D55C164152CFE45000E2FA5 /* iPhone4_header.png in Resources */,
 				2D55C166152D00D9000E2FA5 /* redo_icon.png in Resources */,
+				2D5B406C152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision in Resources */,
+				2D5B4070152D17DF00EBEA2F /* Default.png in Resources */,
+				2D5B4071152D17DF00EBEA2F /* space_math_icon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +434,8 @@
 		2D29E6F614C666C600DA44CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
