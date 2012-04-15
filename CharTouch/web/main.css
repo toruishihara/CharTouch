@@ -3,29 +3,44 @@
 	padding:0;
 }
 body {
-	width: 320px;
-	height:480px;
+	width: 768px;
+	height:1004px;
 	background-image:url(spaceback.png);
 	-webkit-animation: 'stardriver' 24s linear 0s infinite normal;
 }
 @-webkit-keyframes 'stardriver' {
 	0% { background-position: 0px 0px; }
-	100% { background-position: 0px 240px; }
+	100% { background-position: 0px 1004px; }
 }
 #gameScreen {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 768px;
-	height: 1024px;
+	height: 1004px;
+}
+#titleLogo {
+	position: absolute;
+	top: 100px;
+	left: 64px;
+	width: 640px;
+	height: 360px;
 }
 #restart
 {
     position:absolute;
-    left:100px;
-    top:700px;
-	width: 200px;
-	height: 60px;
+    left:40px;
+    top:960px;
+	width: 40px;
+	height: 40px;
+}
+#setting
+{
+    position:absolute;
+    left:700px;
+    top:960px;
+	width:40px;
+	height:40px;
 }
 #grade
 {
@@ -47,33 +62,47 @@ body {
 	height: 32px;
 	color: yellow;
 	font-size: 32px;
-	/** background-image:url(flag.png); **/
+    font-family: 'Helvetica';
 }
 #quizMessage {
 	position: absolute;
-	top: 20px;
-	left: 50px;
-	width: 610px;
-	height: 64px;
+	top: 5px;
+	left: 20px;
+	width: 300px;
+	height: 48px;
 	color: white;
-	font-size: medium;
+    font-family: 'Helvetica';
+    font-weight: 900;
+	font-size: 48px;
+    display: none;
+	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
 }
 #quiz {
+    font-family: 'Helvetica';
+    font-weight: 900;
 	color: white;
 	font-size: 48px;
 }
 #resultMessage {
 	position: absolute;
 	top: 120px;
-	left: 50px;
-	width: 610px;
+	left: 10px;
+	width: 280px;
 	height: 64px;
-	color: yellow;
+	color: blue;
+    font-family: 'Helvetica';
 	font-size: medium;
     display: none;
+    background-image: url('ship_plate.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
+    padding-left: 70px;
 }
 #result {
-	color: white;
+	color: blue;
+    font-family: 'Helvetica';
+    font-weight: 900;
 	font-size: 48px;
 }
 
@@ -106,18 +135,15 @@ body {
 	100% { -webkit-transform: scale(0); }
 }
 
-#tryAgain {
-    background-color:#002233;
-    position: absolute;
-	top: 220px;
-	left: 50px;
-	width: 610px;
-	height: 64px;
-	color: white;
-	font-size: medium;
-
+@-webkit-keyframes 'slidein' {
+	0% { -webkit-transform: translate(320px,0px); }
+	100% { -webkit-transform: translate(0,0); }
 }
-#tryAgain:hover {
-    background-color:#008899;
-    transitin:background-color 0.5s linear;
+
+.dropin {
+	-webkit-animation: 'dropin' 2s linear 0s 1 normal;
+}
+@-webkit-keyframes 'dropin' {
+	0% { -webkit-transform: translate(0px,-480px); }
+	100% { -webkit-transform: translate(0,0); }
 }

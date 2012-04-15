@@ -15,6 +15,7 @@ var quizs;// = new Array(num_quiz);
 var results;// = new Array(num_quiz);
 var used_quiz;// = new Array(all_quiz_num);
 var isIphone = 0;
+var left_offset = 32;
 console.log("start " + date.getTime());
 
 // Debug console redirection
@@ -82,6 +83,7 @@ function game_start() {
         answer_array_width = 13;
         answer_array_height = 13;
         answer_offset = 60;
+        left_offset = 10;
     }
     var grade = window.localStorage["grade"];
     console.log("grade=" + grade);
@@ -131,7 +133,7 @@ function game_start() {
         mat[mat_base + (y+1)*answer_array_width + x] = 1;
         mat[mat_base + (y+1)*answer_array_width + x+1] = 1;
         mat[mat_base + (y+1)*answer_array_width + x-1] = 1;
-        ele.style.left = 10 + (x * font_size)+"px";
+        ele.style.left = left_offset + (x * font_size)+"px";
         ele.style.top = answer_offset + (y * font_size)+"px";
         ele.className = 'dropin';
 

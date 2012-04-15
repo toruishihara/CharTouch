@@ -1,0 +1,26 @@
+#header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 768px;
+	height: 60px;
+	background-image:url(iPhone4_header.png);
+    background-size: 768px 60px
+}
+#backbtn {
+	position: absolute;
+    top: 6px;
+    left: 16px;
+    height: 48px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    border-width: 0;
+}
+#titleLogo {
+    padding-top: 100px;
+}
+#grade {
+    height: 48px;
+    font-size: large;
+}
