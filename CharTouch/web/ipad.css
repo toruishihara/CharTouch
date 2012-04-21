@@ -10,7 +10,7 @@ body {
 }
 @-webkit-keyframes 'stardriver' {
 	0% { background-position: 0px 0px; }
-	100% { background-position: 0px 1004px; }
+	100% { background-position: 0px 480px; }
 }
 #gameScreen {
 	position: absolute;
@@ -19,8 +19,10 @@ body {
 	width: 768px;
 	height: 1004px;
 }
-#titleLogo {
-	position: absolute;
+#titleLogo {	
+    position: absolute;
+    background:url(space_math.png);
+    background-size:640px 360px;    
 	top: 100px;
 	left: 64px;
 	width: 640px;
@@ -29,6 +31,8 @@ body {
 #restart
 {
     position:absolute;
+    background: url(redo_icon.png);
+    background-size: 40px 40px;
     left:40px;
     top:960px;
 	width: 40px;
@@ -37,6 +41,8 @@ body {
 #setting
 {
     position:absolute;
+    background: url(setting_icon.png);
+    background-size: 40px 40px;
     left:700px;
     top:960px;
 	width:40px;

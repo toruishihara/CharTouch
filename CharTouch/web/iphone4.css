@@ -21,6 +21,8 @@ body {
 }
 #titleLogo {
 	position: absolute;
+    background: url(space_math.png);
+    background-size: 320px 180px;    
 	top: 50px;
 	left: 0px;
 	width: 320px;
@@ -28,15 +30,19 @@ body {
 }
 #restart
 {
-    position:absolute;
-    left:20px;
-    top:420px;
-	width:40px;
-	height:40px;
+    position: absolute;
+    background: url(redo_icon.png);
+    background-size: 40px 40px;
+    left: 20px;
+    top: 420px;
+	width: 40px;
+	height: 40px;
 }
 #setting
 {
     position:absolute;
+    background: url(setting_icon.png);
+    background-size: 40px 40px;
     left:260px;
     top:420px;
 	width:40px;

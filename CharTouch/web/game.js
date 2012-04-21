@@ -1,6 +1,6 @@
 var num_quiz = 10;
-var startTime = 0;	// 開始時間
-var count = 0;	// 旗を取った数
+var startTime = 0;
+var count = 0; // number of touched item
 var font_size = 32;
 var answer_array_width = 20;
 var answer_array_height = 20;
@@ -35,11 +35,11 @@ console.error = console.log;
 
 //msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 //msg.addEventListener("click", function(evt){evt.preventDefault();},true);
-//full.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
-full.addEventListener("touchstart", test_func,true);
-document.getElementById("restart").addEventListener("touchstart", game_start, true);
-document.getElementById("setting").addEventListener("touchstart", game_setting, true);
-document.getElementById("backbtn").addEventListener("touchstart", game_back, true);
+
+//full.addEventListener('touchmove', function(e){ e.preventDefault(); }); 
+document.getElementById("restart").addEventListener("touchstart", gameStart, true);
+document.getElementById("setting").addEventListener("touchstart", gameSetting, true);
+document.getElementById("backbtn").addEventListener("touchstart", gameBack, true);
 
 document.getElementById("quizMessage").style.display = "none";
 
@@ -49,19 +49,12 @@ onload();
 
 function onload() {
     console.log("onload");
-    game_title();
-    setTimeout(game_start, 4000);
+    gameTitle();
+    setTimeout(gameStart, 4000);
 }
 
-function test_func(evt) {
-    console.log("test_func " + evt.target.tagName);
-    if (evt.target.tagName != 'SELECT' && evt.target.tagName != 'INPUT') {
-        evt.preventDefault();
-    }
-}
-
-function game_title() {
-    console.log("game_title");
+function gameTitle() {
+    console.log("gameTitle");
 	document.getElementById("resultMessage").style.display = "none";
 
     var title = document.getElementById("titleLogo");
@@ -73,7 +66,7 @@ function game_title() {
                }, 4000);
 }
 
-function game_start() {
+function gameStart() {
     count = 0;
     console.log("game_start innerWidth=" + window.innerWidth);
 	document.getElementById("resultMessage").style.display = "none";
@@ -141,25 +134,24 @@ function game_start() {
         ele.addEventListener("click", touchHandler, true);
         document.getElementById("gameScreen").appendChild(ele);
     }
-    //setTimeout("window.scrollTo(0,1)", 10);	// ナビゲーションバーを消す
     nextQuiz();
 }
 
-function game_setting() {
-    console.log("game_setting");
+function gameSetting() {
+    console.log("gameSetting");
     //window.open('setting.html');
     location.href="setting.html";
     return false;
 }
 
-function game_back() {
+function gameBack() {
     console.log("game_back");
     location.href="index.html";
 }
 
 function touchHandler(evt) {
-    //console.log("touchHandler in " + this.id + " " + this.className);
-    if (this.className == "fade") return;	// すでにタッチされ処理中の場合は以後の処理はしない
+    console.log("touchHandler in " + this.id + " " + this.className);
+    if (this.className == "fade") return;
     var obj = this;
     if (!this.id.match("f"+count)) {
         this.savedId = this.id;
