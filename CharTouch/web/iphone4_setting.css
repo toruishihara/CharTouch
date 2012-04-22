@@ -1,26 +1,55 @@
-#header {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+body {
 	width: 320px;
-	height: 40px;
-	background-image:url(iPhone4_header.png);
-    background-size: 320px 40px
+	height:480px;
+	background-image:url(spaceback.png);
+    font-size: 32px;
+    color: yellow;
 }
-#backbtn {
+#backBtn {
 	position: absolute;
-    top: 4px;
-    left: 5px;
-    height: 32px;
-    font-size: medium;
-    color: white;
-    background-color: transparent;
-    border-width: 0;
+	background-image: url(back_icon.png);
+    background-size: 64px 32px;
+    background-repeat: no-repeat;
+    top: 6px;
+    left: 6px;
+	width: 128px;
+	height: 32px;
+    font-size: 24px;
+    color: yellow;
+    padding: 4px 64px;
 }
-#titleLogo {
-    padding-top: 50px;
+#titleLogo {	
+    position: absolute;
+	background-image: url(space_math.png);
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    top: 70px;
+    left: 24px;
+	width: 200px;
+	height: 100px;
+}
+#settingText {
+	position: absolute;
+    top: 200px;
+    left: 12px;
+	width: 300px;
+    font-size: 24px;
+    color: yellow;
+}
+#gradeText {
+	position: absolute;
+    top: 280px;
+    left: 12px;
+	width: 700px;
+    height: 28px;
+    font-size: 24px;
+    color: yellow;
 }
 #grade {
+	position: absolute;
+    top: 310px;
+    left: 12px;
+	width: 240px;
     height: 32px;
-    font-size: large;
+    font-size: 24px;
 }

@@ -6,16 +6,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>Space Math setting</title>
         <link rel="stylesheet" media="screen and (max-device-width: 320px)" href="iphone4_setting.css" />
-        <link rel="stylesheet" media="screen and (min-device-width: 321px) and (max-device-width: 768px)" href="ipad_setting.css" />
+        <link rel="stylesheet" media="screen and (min-device-width: 321px)" href="ipad_setting.css" />
 	</head>
-    <body onload="onload_setting();">
+    <body onload="onloadSetting();">
         <form>
-            <div id="header">
-                <button id="backbtn" type=button>Back</button><br><br>
-            </div>
-            <div id="titleLogo"><img src="space_math_bk.png" width=280></img></div>
+            <div id="backBtn"></div><br>
+            <div id="titleLogo"><!--img src="space_math_bk.png" width=560--></div>
+            <div id="settingText">
             Ver 1.0.1<br>by Toru Ishihara<br><br>
-            Type of question
+            </div>
+            <div id="gradeText">Question type</div>
             <select id="grade">
                 <option value="1m_20">Addition basic</option>
                 <option value="2m_20">Subtraction basic</option>

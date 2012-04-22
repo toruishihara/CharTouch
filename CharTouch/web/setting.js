@@ -14,23 +14,23 @@ console.error = console.log;
 // End Debug console redirection
 
 console.log("setting top");
-document.getElementById("backbtn").addEventListener("touchstart", game_back, true);
-document.getElementById("grade").addEventListener("change", grade_change, true);
+document.getElementById("backBtn").addEventListener("touchstart", gameBack, true);
+document.getElementById("grade").addEventListener("change", gradeChange, true);
 
-function onload_setting() {
+function onloadSetting() {
     var grade = window.localStorage["grade"];
     console.log("onload_setting grade=" + grade);
-    if (grade.length >= 2) {
+    if (grade != undefined && grade.length >= 2) {
         document.getElementById("grade").value = grade;
     }
 }
 
-function game_back() {
+function gameBack() {
     console.log("game_back");
     location.href="index.html";
 }
 
-function grade_change(e) {
+function gradeChange(e) {
     console.log("grade change " + e.target.id + ":" + e.target.value);
     
     var grade = document.getElementById("grade").value;
