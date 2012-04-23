@@ -36,7 +36,7 @@
 	//[super dealloc];
 }
 
-#ifdef DEBUG
+#ifndef DEBUG
 - (BOOL)webView:(UIWebView *)webView2 
 shouldStartLoadWithRequest:(NSURLRequest *)request 
  navigationType:(UIWebViewNavigationType)navigationType {
