@@ -5,6 +5,7 @@
 body {
 	width: 768px;
 	height:1004px;
+  background-color:#000000;  
 	background-image:url(spaceback.png);
 	-webkit-animation: 'stardriver' 24s linear 0s infinite normal;
 }
