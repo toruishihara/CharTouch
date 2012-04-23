@@ -36,7 +36,8 @@ console.error = console.log;
 //msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
 //msg.addEventListener("click", function(evt){evt.preventDefault();},true);
 
-//full.addEventListener('touchmove', function(e){ e.preventDefault(); }); 
+full.addEventListener("touchmove", moveHandler, true); 
+
 document.getElementById("restart").addEventListener("touchstart", gameStart, true);
 document.getElementById("setting").addEventListener("touchstart", gameSetting, true);
 document.getElementById("backbtn").addEventListener("touchstart", gameBack, true);
@@ -51,6 +52,13 @@ function onload() {
     console.log("onload");
     gameTitle();
     setTimeout(gameStart, 4000);
+}
+
+function moveHandler(evt) {
+    console.log("moveHandler " + evt.target.tagName);
+    if (evt.target.tagName != 'SELECT' && evt.target.tagName != 'INPUT') {
+        evt.preventDefault();
+    }
 }
 
 function gameTitle() {
