@@ -16,9 +16,10 @@ var results;// = new Array(num_quiz);
 var used_quiz;// = new Array(all_quiz_num);
 var isIphone = 0;
 var left_offset = 32;
-console.log("start " + date.getTime());
+console.log("start at " + date.getTime());
 
 // Debug console redirection
+/*
 console = new Object();
 console.log = function(log) {
     var iframe = document.createElement("IFRAME");
@@ -31,6 +32,7 @@ console.debug = console.log;
 console.info = console.log;
 console.warn = console.log;
 console.error = console.log;
+*/
 // End Debug console redirection
 
 //msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
@@ -76,11 +78,11 @@ function gameTitle() {
 
 function gameStart() {
     count = 0;
-    console.log("game_start innerWidth=" + window.innerWidth);
+    console.log("game_start innerWidth=" + window.innerWidth + " H=" + window.innerHeight);
 	document.getElementById("resultMessage").style.display = "none";
-    if (window.innerWidth <= 320) {
+    if (window.innerWidth <= 640) {
         isIphone = 1;
-        font_size = 24;
+        font_size = 24 + (window.innerWidth - 320)/13;
         answer_array_width = 13;
         answer_array_height = 13;
         answer_offset = 60;

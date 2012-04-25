@@ -9,6 +9,7 @@ body {
 	position: absolute;
 	background-image: url(back_icon.png);
     background-size: 64px 32px;
+    -webkit-background-size: 64px 32px;
     background-repeat: no-repeat;
     top: 6px;
     left: 6px;
@@ -22,6 +23,7 @@ body {
     position: absolute;
 	background-image: url(space_math.png);
     background-size: 200px 100px;
+    -webkit-background-size: 200px 100px;
     background-repeat: no-repeat;
     top: 70px;
     left: 24px;

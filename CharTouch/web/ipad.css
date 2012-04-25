@@ -33,6 +33,7 @@ body {
 {
     position:absolute;
     background: url(redo_icon.png);
+  background-color:#f00000;  
     background-size: 40px 40px;
     left:40px;
     top:960px;
