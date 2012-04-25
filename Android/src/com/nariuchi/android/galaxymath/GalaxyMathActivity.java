@@ -10,9 +10,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebView;
 
+
 public class GalaxyMathActivity extends Activity {
     private WebView wv;
 
+    private int TextWithLocalWebServer = 0;
+    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,13 +45,17 @@ public class GalaxyMathActivity extends Activity {
         wv.addJavascriptInterface(jsInterface, "console");
 
         //load file
-        wv.loadUrl("file:///android_asset/index.html");
-        Log.d("Java", "wv.w=" + wv.getWidth() + " h=" + wv.getHeight());
+        if (TextWithLocalWebServer == 0) {
+        	wv.loadUrl("file:///android_asset/index.html");
+        }
     }
     @Override
-    public void onStart() {
-        super.onStart();
-        Log.d("Java", "wv2.w=" + wv.getWidth() + " h=" + wv.getHeight());
+    public void onResume() {
+    	super.onResume();
+        if (TextWithLocalWebServer == 1) {
+        	wv.clearCache(true);
+        	wv.loadUrl("http://192.168.1.104/~toru1/CharTouch/CharTouch/web/");
+        }
     }
 
     //javascript interface
