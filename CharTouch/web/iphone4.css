@@ -22,8 +22,9 @@ body {
 }
 #titleLogo {
     position: absolute;
-    background: url(space_math_320.png);
-    background-size: contain;    
+    background: url(space_math.png);
+    background-size: 100% 100%;    
+    -webkit-background-size: 100% 100%;    
     background-repeat: no-repeat;
     top: 50px;
     left: 0px;

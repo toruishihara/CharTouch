@@ -14,7 +14,7 @@ import android.webkit.WebView;
 public class GalaxyMathActivity extends Activity {
     private WebView wv;
 
-    private int TextWithLocalWebServer = 0;
+    private int TestWithLocalWebServer = 0;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,14 +45,14 @@ public class GalaxyMathActivity extends Activity {
         wv.addJavascriptInterface(jsInterface, "console");
 
         //load file
-        if (TextWithLocalWebServer == 0) {
+        if (TestWithLocalWebServer == 0) {
         	wv.loadUrl("file:///android_asset/index.html");
         }
     }
     @Override
     public void onResume() {
     	super.onResume();
-        if (TextWithLocalWebServer == 1) {
+        if (TestWithLocalWebServer == 1) {
         	wv.clearCache(true);
         	wv.loadUrl("http://192.168.1.104/~toru1/CharTouch/CharTouch/web/");
         }
