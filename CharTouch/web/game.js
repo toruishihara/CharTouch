@@ -5,7 +5,7 @@ var font_size = 32;
 var answer_array_width = 20;
 var answer_array_height = 20;
 var answer_offset = 120;
-var default_grade = "1m_20";
+var default_grade = "1k_10";
 var mat;// = new Array(20*15);
 var mat_base = 20;
 var msg = document.getElementById("quizMessage");
@@ -19,7 +19,6 @@ var left_offset = 32;
 console.log("start at " + date.getTime());
 
 // Debug console redirection
-/*
 console = new Object();
 console.log = function(log) {
     var iframe = document.createElement("IFRAME");
@@ -32,7 +31,6 @@ console.debug = console.log;
 console.info = console.log;
 console.warn = console.log;
 console.error = console.log;
-*/
 // End Debug console redirection
 
 //msg.addEventListener("touchstart", function(evt){evt.preventDefault();},true);
@@ -42,7 +40,7 @@ full.addEventListener("touchmove", moveHandler, true);
 
 document.getElementById("restart").addEventListener("touchstart", gameStart, true);
 document.getElementById("setting").addEventListener("touchstart", gameSetting, true);
-document.getElementById("backbtn").addEventListener("touchstart", gameBack, true);
+//document.getElementById("backbtn").addEventListener("touchstart", gameBack, true);
 
 document.getElementById("quizMessage").style.display = "none";
 
@@ -50,10 +48,93 @@ console.log("top level main");
 onload();
 //window.addEventListener("load", onload, true);
 
+ks = new Array(20);
+ks['0'] = '花_U00009928';
+ks['1'] = '字_U00009930_L00002042_R80001942';
+ks['2'] = '学_U00009935_L00002050_R80001950';
+ks['3'] = '休_L00002599_L00003025';
+ks['4'] = '村_L00004399';
+ks['5'] = '速_L00003099_B00809919';
+ks['6'] = '岩_U00009935';
+ks['7'] = '顔_L00005099';
+ks['8'] = '黒_B00759999';
+ks['9'] = '算_U00009932';
+ks['10'] = '貝_B00759999';
+ks['11'] = '貝_B00759999';
+
+
+var charCnt = 0;
+var fontSize = 32;
+function createOneCharCanvas(canvas)
+{
+        qz = ks[charCnt].split("_");
+	canvas.height = fontSize;
+	canvas.width = fontSize;
+	canvas.style = "background-color:rgba(0,0,0,0.0)";
+	var ctx = canvas.getContext("2d");
+
+	ctx.fillStyle = "#FFFF00";
+	ctx.font = "32px Helvetica";
+	ctx.textBaseline="top";
+	ctx.fillText(qz[0], 0, 0);
+
+	var i = 1;
+	while(qz[i]) {
+		blackOut(ctx, qz[i]);
+		i++;
+	}
+}
+function createOnePartCanvas(canvas)
+{
+        qz = ks[charCnt].split("_");
+	canvas.height = fontSize;
+	canvas.width = fontSize;
+	canvas.style = "background-color:rgba(0,0,0,0.0)";
+	var ctx = canvas.getContext("2d");
+
+	var i = 1;
+	ctx.beginPath();
+	while(qz[i]) {
+		clipRect(ctx, qz[i]);
+		i++;
+	}
+	ctx.clip();
+
+	ctx.fillStyle = "#FFFF00";
+	ctx.font = "32px Helvetica";
+	ctx.textBaseline="top";
+	ctx.fillText(qz[0], 0, 0);
+
+	// only for debug
+	charCnt++;
+}
+
+function blackOut(ctx, str)
+{
+	var part = str.charAt(0);
+	var x = parseInt(str.substr(1,2), 10);
+	var y = parseInt(str.substr(3,2), 10);
+	var w = parseInt(str.substr(5,2), 10);
+	var h = parseInt(str.substr(7,2), 10);
+	ctx.fillStyle="rgba(0,0,0,1.0)";
+	ctx.clearRect(x*fontSize/100,y*fontSize/100,w*fontSize/100,h*fontSize/100);
+}
+function clipRect(ctx, str)
+{
+	var part = str.charAt(0);
+	var x = parseInt(str.substr(1,2), 10);
+	var y = parseInt(str.substr(3,2), 10);
+	var w = parseInt(str.substr(5,2), 10);
+	var h = parseInt(str.substr(7,2), 10);
+	ctx.rect(x*fontSize/100,y*fontSize/100,w*fontSize/100,h*fontSize/100);
+}
+
 function onload() {
     console.log("onload");
+	// for faster debug
     gameTitle();
-    setTimeout(gameStart, 4000);
+    //setTimeout(gameStart, 4000);
+    setTimeout(gameStart, 400);
 }
 
 function moveHandler(evt) {
@@ -70,10 +151,10 @@ function gameTitle() {
     var title = document.getElementById("titleLogo");
     setTimeout(function(){
                title.className = "fadeTitle";
-               }, 2000);
+               }, 200);
     setTimeout(function(){
                title.style.display = "none";
-               }, 4000);
+               }, 400);
 }
 
 function gameStart() {
@@ -106,8 +187,12 @@ function gameStart() {
 
     for(var i=0; i<num_quiz; i++){
         var old = document.getElementById("f"+i);
-        if (old != null) {
+        if (old) {
             old.parentNode.removeChild(old);
+        }
+        var old2 = document.getElementById("p"+i);
+        if (old2) {
+            old2.parentNode.removeChild(old2);
         }
         var q;
         do { 
@@ -116,10 +201,17 @@ function gameStart() {
         } while (used_quiz[qz[0]] == 1);
         quizs[i] = q;
         used_quiz[qz[0]] = 1;
-        var ele = document.createElement("div");
-        ele.id = "f"+i;
         qz = all_quiz[data_prefix+q].split(",");
-        ele.innerHTML = qz[0];
+
+        var ele = document.createElement('canvas');
+        ele.id = "f"+i;
+        //ele.innerHTML = qz[0];
+	createOneCharCanvas(ele);
+
+        var elePart = document.createElement('canvas');
+        elePart.id = "p"+i;
+	createOnePartCanvas(elePart);
+
         var x,y;
         do {
             x = Math.floor(Math.random()*(answer_array_width-1));
@@ -136,12 +228,17 @@ function gameStart() {
         mat[mat_base + (y+1)*answer_array_width + x] = 1;
         mat[mat_base + (y+1)*answer_array_width + x+1] = 1;
         mat[mat_base + (y+1)*answer_array_width + x-1] = 1;
+        elePart.style.left = left_offset + (x * font_size)+"px";
+        elePart.style.top = answer_offset + (y * font_size)+"px";
+        elePart.className = 'dropin';
+
         ele.style.left = left_offset + (x * font_size)+"px";
         ele.style.top = answer_offset + (y * font_size)+"px";
-        ele.className = 'dropin';
+        ele.className = 'slidein';
 
         ele.addEventListener("touchstart", touchHandler, true);
         ele.addEventListener("click", touchHandler, true);
+        document.getElementById("gameScreen").appendChild(elePart);
         document.getElementById("gameScreen").appendChild(ele);
     }
     nextQuiz();
@@ -179,8 +276,8 @@ function touchHandler(evt) {
     if (results[count] != -1) {
         results[count] = 1;
     }
-    count = count + 1;	// 旗を取得した数を1増やす
-    if (count >= num_quiz){	// 全ての旗を取った
+    count = count + 1;
+    if (count >= num_quiz){
         showResult();
     } else {
         nextQuiz();

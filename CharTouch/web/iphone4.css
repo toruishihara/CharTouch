@@ -68,11 +68,17 @@ body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 48px;
-	height: 24px;
-	color: yellow;
-	font-size: 24px;
-    font-family: 'Helvetica';
+	width: 32px;
+	height: 32px;
+	font-size: 32px;
+}
+#p0,#p1,#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	font-size: 32px;
 }
 #quizMessage {
 	position: absolute;
@@ -146,6 +152,9 @@ body {
 	100% { -webkit-transform: scale(0); }
 }
 
+.slidein {
+	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
+}
 @-webkit-keyframes 'slidein' {
 	0% { -webkit-transform: translate(320px,0px); }
 	100% { -webkit-transform: translate(0,0); }

@@ -28,6 +28,50 @@
 		2D6EC5B91526890F00C384C6 /* space_math_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C951526592A0055CE3C /* space_math_bk.png */; };
 		2D6EC5BA1526890F00C384C6 /* space_math.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C961526592A0055CE3C /* space_math.png */; };
 		2D6EC5BB1526890F00C384C6 /* data1m.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8B15264E6D0055CE3C /* data1m.js */; };
+		2D8EBF461559D82100F21FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6CE14C666C500DA44CB /* main.m */; };
+		2D8EBF471559D82100F21FEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6D214C666C500DA44CB /* AppDelegate.m */; };
+		2D8EBF481559D82100F21FEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E6DB14C666C500DA44CB /* ViewController.m */; };
+		2D8EBF491559D82100F21FEF /* PurchaseCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFEA031517929C00253EBA /* PurchaseCheck.m */; };
+		2D8EBF4B1559D82100F21FEF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
+		2D8EBF4C1559D82100F21FEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C214C666C500DA44CB /* UIKit.framework */; };
+		2D8EBF4D1559D82100F21FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C414C666C500DA44CB /* Foundation.framework */; };
+		2D8EBF4E1559D82100F21FEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C614C666C500DA44CB /* CoreGraphics.framework */; };
+		2D8EBF501559D82100F21FEF /* space_math_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C951526592A0055CE3C /* space_math_bk.png */; };
+		2D8EBF511559D82100F21FEF /* space_math.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C961526592A0055CE3C /* space_math.png */; };
+		2D8EBF521559D82100F21FEF /* data1m.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8B15264E6D0055CE3C /* data1m.js */; };
+		2D8EBF531559D82100F21FEF /* setting.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4E1523E2660055CE3C /* setting.js */; };
+		2D8EBF541559D82100F21FEF /* game.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3714C7987200C4DB4E /* game.js */; };
+		2D8EBF551559D82100F21FEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E6CB14C666C500DA44CB /* InfoPlist.strings */; };
+		2D8EBF561559D82100F21FEF /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3614C7987200C4DB4E /* galaxy.png */; };
+		2D8EBF571559D82100F21FEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3814C7987200C4DB4E /* index.html */; };
+		2D8EBF581559D82100F21FEF /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DF3914C7987200C4DB4E /* main.css */; };
+		2D8EBF591559D82100F21FEF /* osk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6FB9014C79D7900532D47 /* osk_icon.png */; };
+		2D8EBF5A1559D82100F21FEF /* iphone4.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF52A0714EE1E7C008AE062 /* iphone4.css */; };
+		2D8EBF5B1559D82100F21FEF /* spaceback.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA06151799FA00253EBA /* spaceback.png */; };
+		2D8EBF5C1559D82100F21FEF /* space_kana.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFEA08151A84A200253EBA /* space_kana.png */; };
+		2D8EBF5D1559D82100F21FEF /* setting.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA136F151BCED200458B97 /* setting.html */; };
+		2D8EBF5E1559D82100F21FEF /* setting_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA1371151BD06800458B97 /* setting_icon.png */; };
+		2D8EBF5F1559D82100F21FEF /* iphone4_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C531523E2AD0055CE3C /* iphone4_setting.css */; };
+		2D8EBF601559D82100F21FEF /* ship_plate.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C5F15262F240055CE3C /* ship_plate.png */; };
+		2D8EBF611559D82100F21FEF /* index_j.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8C15264E6D0055CE3C /* index_j.html */; };
+		2D8EBF621559D82100F21FEF /* setting_j.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8D15264E6D0055CE3C /* setting_j.html */; };
+		2D8EBF631559D82100F21FEF /* space_math_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8915264C5A0055CE3C /* space_math_icon.png */; };
+		2D8EBF641559D82100F21FEF /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144ED152AB18B007A3631 /* ViewController_iPad.xib */; };
+		2D8EBF651559D82100F21FEF /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144EF152AB18B007A3631 /* ViewController_iPhone.xib */; };
+		2D8EBF661559D82100F21FEF /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C1656152BBA4F004CE014 /* ufo.png */; };
+		2D8EBF671559D82100F21FEF /* iPhone4_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C163152CFE45000E2FA5 /* iPhone4_header.png */; };
+		2D8EBF681559D82100F21FEF /* redo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C165152D00D9000E2FA5 /* redo_icon.png */; };
+		2D8EBF691559D82100F21FEF /* CharTouch_iphone_dist.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */; };
+		2D8EBF6A1559D82100F21FEF /* space_math_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406F152D17DF00EBEA2F /* space_math_icon2.png */; };
+		2D8EBF6B1559D82100F21FEF /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94BC153B4A80007E1A59 /* Default-Portrait~ipad.png */; };
+		2D8EBF6C1559D82100F21FEF /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94BE153B4AC1007E1A59 /* Default-Portrait@2x~ipad.png */; };
+		2D8EBF6D1559D82100F21FEF /* ipad_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94C0153B73BB007E1A59 /* ipad_setting.css */; };
+		2D8EBF6E1559D82100F21FEF /* ipad.css in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94C1153B73BB007E1A59 /* ipad.css */; };
+		2D8EBF6F1559D82100F21FEF /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9BF37E1543C8D900148269 /* back_icon.png */; };
+		2D8EBF701559D82100F21FEF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DAE83851545B70F00EA7E20 /* Default@2x.png */; };
+		2D8EBF711559D82100F21FEF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406E152D17DF00EBEA2F /* Default.png */; };
+		2D8EBF721559D82100F21FEF /* galaxy_math_icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DAE83891545D8A800EA7E20 /* galaxy_math_icon_72.png */; };
+		2D8EBF791559D89400F21FEF /* data1k.js in Sources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
 		2D9BF37F1543C8D900148269 /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9BF37E1543C8D900148269 /* back_icon.png */; };
 		2D9C1657152BBA4F004CE014 /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C1656152BBA4F004CE014 /* ufo.png */; };
@@ -82,6 +126,8 @@
 		2D6144F0152AB18B007A3631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		2D614585152ABEDB007A3631 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D71279814CF61F300B7CC9A /* data1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data1.js; sourceTree = "<group>"; };
+		2D8EBF761559D82100F21FEF /* Math_T copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math_T copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8EBF781559D82100F21FEF /* Math_T copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Math_T copy-Info.plist"; path = "/Users/toru1/Sites/CharTouch/Math_T copy-Info.plist"; sourceTree = "<absolute>"; };
 		2D911C4F14F8D2780058C6CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2D9BF37E1543C8D900148269 /* back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_icon.png; sourceTree = "<group>"; };
 		2D9C1656152BBA4F004CE014 /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufo.png; sourceTree = "<group>"; };
@@ -123,6 +169,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D8EBF4A1559D82100F21FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8EBF4B1559D82100F21FEF /* StoreKit.framework in Frameworks */,
+				2D8EBF4C1559D82100F21FEF /* UIKit.framework in Frameworks */,
+				2D8EBF4D1559D82100F21FEF /* Foundation.framework in Frameworks */,
+				2D8EBF4E1559D82100F21FEF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,6 +200,7 @@
 				2D29E6E914C666C600DA44CB /* CharTouchTests */,
 				2D29E6C114C666C500DA44CB /* Frameworks */,
 				2D29E6BF14C666C500DA44CB /* Products */,
+				2D8EBF781559D82100F21FEF /* Math_T copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				2D29E6BE14C666C500DA44CB /* GalaxyMath.app */,
+				2D8EBF761559D82100F21FEF /* Math_T copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +323,23 @@
 			productReference = 2D29E6BE14C666C500DA44CB /* GalaxyMath.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2D8EBF441559D82100F21FEF /* GalaxyKanji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D8EBF731559D82100F21FEF /* Build configuration list for PBXNativeTarget "GalaxyKanji" */;
+			buildPhases = (
+				2D8EBF451559D82100F21FEF /* Sources */,
+				2D8EBF4A1559D82100F21FEF /* Frameworks */,
+				2D8EBF4F1559D82100F21FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GalaxyKanji;
+			productName = CharTouch;
+			productReference = 2D8EBF761559D82100F21FEF /* Math_T copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,6 +361,7 @@
 			projectRoot = "";
 			targets = (
 				2D29E6BD14C666C500DA44CB /* Math_T */,
+				2D8EBF441559D82100F21FEF /* GalaxyKanji */,
 			);
 		};
 /* End PBXProject section */
@@ -332,6 +409,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D8EBF4F1559D82100F21FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8EBF501559D82100F21FEF /* space_math_bk.png in Resources */,
+				2D8EBF511559D82100F21FEF /* space_math.png in Resources */,
+				2D8EBF521559D82100F21FEF /* data1m.js in Resources */,
+				2D8EBF531559D82100F21FEF /* setting.js in Resources */,
+				2D8EBF541559D82100F21FEF /* game.js in Resources */,
+				2D8EBF551559D82100F21FEF /* InfoPlist.strings in Resources */,
+				2D8EBF561559D82100F21FEF /* galaxy.png in Resources */,
+				2D8EBF571559D82100F21FEF /* index.html in Resources */,
+				2D8EBF581559D82100F21FEF /* main.css in Resources */,
+				2D8EBF591559D82100F21FEF /* osk_icon.png in Resources */,
+				2D8EBF5A1559D82100F21FEF /* iphone4.css in Resources */,
+				2D8EBF5B1559D82100F21FEF /* spaceback.png in Resources */,
+				2D8EBF5C1559D82100F21FEF /* space_kana.png in Resources */,
+				2D8EBF5D1559D82100F21FEF /* setting.html in Resources */,
+				2D8EBF5E1559D82100F21FEF /* setting_icon.png in Resources */,
+				2D8EBF5F1559D82100F21FEF /* iphone4_setting.css in Resources */,
+				2D8EBF601559D82100F21FEF /* ship_plate.png in Resources */,
+				2D8EBF611559D82100F21FEF /* index_j.html in Resources */,
+				2D8EBF621559D82100F21FEF /* setting_j.html in Resources */,
+				2D8EBF631559D82100F21FEF /* space_math_icon.png in Resources */,
+				2D8EBF641559D82100F21FEF /* ViewController_iPad.xib in Resources */,
+				2D8EBF651559D82100F21FEF /* ViewController_iPhone.xib in Resources */,
+				2D8EBF661559D82100F21FEF /* ufo.png in Resources */,
+				2D8EBF671559D82100F21FEF /* iPhone4_header.png in Resources */,
+				2D8EBF681559D82100F21FEF /* redo_icon.png in Resources */,
+				2D8EBF691559D82100F21FEF /* CharTouch_iphone_dist.mobileprovision in Resources */,
+				2D8EBF6A1559D82100F21FEF /* space_math_icon2.png in Resources */,
+				2D8EBF6B1559D82100F21FEF /* Default-Portrait~ipad.png in Resources */,
+				2D8EBF6C1559D82100F21FEF /* Default-Portrait@2x~ipad.png in Resources */,
+				2D8EBF6D1559D82100F21FEF /* ipad_setting.css in Resources */,
+				2D8EBF6E1559D82100F21FEF /* ipad.css in Resources */,
+				2D8EBF6F1559D82100F21FEF /* back_icon.png in Resources */,
+				2D8EBF701559D82100F21FEF /* Default@2x.png in Resources */,
+				2D8EBF711559D82100F21FEF /* Default.png in Resources */,
+				2D8EBF721559D82100F21FEF /* galaxy_math_icon_72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -343,6 +462,18 @@
 				2D29E6D314C666C500DA44CB /* AppDelegate.m in Sources */,
 				2D29E6DC14C666C500DA44CB /* ViewController.m in Sources */,
 				2DCFEA041517929C00253EBA /* PurchaseCheck.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8EBF451559D82100F21FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8EBF461559D82100F21FEF /* main.m in Sources */,
+				2D8EBF471559D82100F21FEF /* AppDelegate.m in Sources */,
+				2D8EBF481559D82100F21FEF /* ViewController.m in Sources */,
+				2D8EBF491559D82100F21FEF /* PurchaseCheck.m in Sources */,
+				2D8EBF791559D89400F21FEF /* data1k.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +604,42 @@
 			};
 			name = Release;
 		};
+		2D8EBF741559D82100F21FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
+				INFOPLIST_FILE = "Math_T copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "Math_T copy";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2D8EBF751559D82100F21FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = PURCHASE_CHECK_0;
+				INFOPLIST_FILE = "Math_T copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "Math_T copy";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +657,15 @@
 			buildConfigurations = (
 				2D29E6F514C666C600DA44CB /* Debug */,
 				2D29E6F614C666C600DA44CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8EBF731559D82100F21FEF /* Build configuration list for PBXNativeTarget "GalaxyKanji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8EBF741559D82100F21FEF /* Debug */,
+				2D8EBF751559D82100F21FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
