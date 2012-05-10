@@ -37,7 +37,7 @@ body {
     background-size: 40px 40px;
     -webkit-background-size: 40px 40px;
     left: 20px;
-    bottom: 10px;
+    bottom: 20px;
     width: 40px;
     height: 40px;
 }
@@ -48,7 +48,7 @@ body {
     background-size: 40px 40px;
     -webkit-background-size: 40px 40px;
     right:10px;
-    bottom: 10px;
+    bottom: 20px;
     width:40px;
     height:40px;
 }
@@ -87,17 +87,15 @@ body {
 	width: 300px;
 	height: 48px;
 	color: white;
-    font-family: 'Helvetica';
-    font-weight: 900;
-	font-size: large;
-    display: none;
+    	font-family: 'Helvetica';
+	font-size: 24px;
+    	display: none;
 	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
 }
 #quiz {
-    font-family: 'Helvetica';
-    font-weight: 900;
+    	font-family: 'Helvetica';
 	color: white;
-	font-size: 32px;
+	font-size: 24px;
 }
 #resultMessage {
 	position: absolute;
@@ -155,6 +153,9 @@ body {
 .slidein {
 	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
 }
+.slidein1sec {
+	-webkit-animation: 'slidein' 1s linear 0s 1 normal;
+}
 @-webkit-keyframes 'slidein' {
 	0% { -webkit-transform: translate(320px,0px); }
 	100% { -webkit-transform: translate(0,0); }
@@ -162,6 +163,9 @@ body {
 
 .dropin {
 	-webkit-animation: 'dropin' 2s linear 0s 1 normal;
+}
+.dropin3sec {
+	-webkit-animation: 'dropin' 3s linear 0s 1 normal;
 }
 @-webkit-keyframes 'dropin' {
 	0% { -webkit-transform: translate(0px,-480px); }

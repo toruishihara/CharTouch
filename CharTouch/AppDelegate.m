@@ -24,7 +24,8 @@
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    [UIApplication sharedApplication].statusBarHidden = YES;
+    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleBlackTranslucent];
+    //[UIApplication sharedApplication].statusBarHidden = YES;
     
 #ifdef PURCHASE_CHECK
     purchase = [[PurchaseCheck alloc] init];
