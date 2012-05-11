@@ -16,12 +16,10 @@ def load_bushu()
     }
 end
 
-load_bushu()
-
-f2 = open("k3.txt", "r")
-grade = 3
-i = 0
-f2.each_line { |line|
+def one_file(fname,grade)
+    f2 = open(fname, "r")
+    i = 0
+    f2.each_line { |line|
 	if (line =~ /(\S*)１(\S*)２(\S*)３(\S*)。(\S*)/) then
 		pre = $1
 		apre = $4
@@ -39,6 +37,10 @@ f2.each_line { |line|
 		printf "all_quiz['%dk%d'] = '%s%s,%s';\n", grade, i, kj, kjx, s5
 		i = i+1
 	end
- }
+     }
+end
  
-                
+load_bushu()
+one_file("k1.txt",1)
+one_file("k2.txt",2)
+one_file("k3.txt",3)
