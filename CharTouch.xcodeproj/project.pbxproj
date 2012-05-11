@@ -77,6 +77,7 @@
 		2DAE838A1545D8A800EA7E20 /* galaxy_math_icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DAE83891545D8A800EA7E20 /* galaxy_math_icon_72.png */; };
 		2DB11198155B25550009006F /* data1k.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2DB1119B155C59800009006F /* CharCanvas.js in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1119A155C59800009006F /* CharCanvas.js */; };
+		2DB111AF155D87B50009006F /* CharCanvas.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB1119A155C59800009006F /* CharCanvas.js */; };
 		2DB51C541523E2AD0055CE3C /* iphone4_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C531523E2AD0055CE3C /* iphone4_setting.css */; };
 		2DB51C5E152525FC0055CE3C /* setting.js in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C4E1523E2660055CE3C /* setting.js */; };
 		2DB51C6015262F240055CE3C /* ship_plate.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C5F15262F240055CE3C /* ship_plate.png */; };
@@ -115,7 +116,7 @@
 		2D2B94BC153B4A80007E1A59 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		2D2B94BE153B4AC1007E1A59 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		2D2B94C0153B73BB007E1A59 /* ipad_setting.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = ipad_setting.css; sourceTree = "<group>"; };
-		2D2B94C1153B73BB007E1A59 /* ipad.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = ipad.css; sourceTree = "<group>"; };
+		2D2B94C1153B73BB007E1A59 /* ipad.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; lineEnding = 0; path = ipad.css; sourceTree = "<group>"; };
 		2D55C165152D00D9000E2FA5 /* redo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redo_icon.png; sourceTree = "<group>"; };
 		2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CharTouch_iphone_dist.mobileprovision; sourceTree = "<group>"; };
 		2D5B406E152D17DF00EBEA2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -411,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB111AF155D87B50009006F /* CharCanvas.js in Resources */,
 				2DB11198155B25550009006F /* data1k.js in Resources */,
 				2D8EBF501559D82100F21FEF /* space_math_bk.png in Resources */,
 				2D8EBF511559D82100F21FEF /* space_math.png in Resources */,

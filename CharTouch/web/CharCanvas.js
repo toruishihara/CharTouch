@@ -20,12 +20,7 @@ function CharCanvas(in_index, in_str, in_font_size) {
     this.blackOut = charCanvas_blackOut;
     this.clipRect = charCanvas_clipRect;
     
-    this.test = charCanvas_test;
-    
     return this;
-}
-function charCanvas_test() {
-    console.log("test");
 }
 
 function charCanvas_init() {
@@ -66,6 +61,9 @@ function charCanvas_separate() {
 		this.blackOut(ctx, parts[i]);
 		i++;
 	}
+    if (g_test) {
+        return;
+    }
     
     // bushu part
     var i = 1;
@@ -84,9 +82,13 @@ function charCanvas_separate() {
 
 function charCanvas_merge() {
     console.log("charCanvas_merge");
-
-    this.sub_canvas.parentNode.removeChild(this.sub_canvas);
-
+    if (g_test) {
+        return;
+    }
+    
+    if (this.sub_canvas.parentNode) {
+        this.sub_canvas.parentNode.removeChild(this.sub_canvas);
+    }
     var parts = this.str.split("_");
     var ctx = this.canvas.getContext("2d");
     ctx.clearRect(0, 0, this.font_size, this.font_size);
@@ -103,8 +105,12 @@ function charCanvas_blackOut(ctx, rect_str)
 	var y = parseInt(rect_str.substr(3,2), 10);
 	var w = parseInt(rect_str.substr(5,2), 10);
 	var h = parseInt(rect_str.substr(7,2), 10);
-	ctx.fillStyle="rgba(0,0,0,1.0)";
-	ctx.clearRect(x*this.font_size/100, y*this.font_size/100, w*this.font_size/100, h*this.font_size/100);
+    if (g_test) {
+        ctx.fillStyle="rgba(0,0,255,0.5)";
+        ctx.fillRect(x*this.font_size/100, y*this.font_size/100, w*this.font_size/100, h*this.font_size/100);
+    } else {
+        ctx.clearRect(x*this.font_size/100, y*this.font_size/100, w*this.font_size/100, h*this.font_size/100);
+    }
 }
 
 function charCanvas_clipRect(ctx, rect_str)
@@ -118,15 +124,16 @@ function charCanvas_clipRect(ctx, rect_str)
 }
 
 function charCanvas_start(x, y) {
+    console.log("x="+x+" y="+y);
     this.separate();
     
     this.sub_canvas.style.left = x + "px";
     this.sub_canvas.style.top = y + "px";
-    this.sub_canvas.className = 'dropin3sec';
+    this.sub_canvas.className = 'dropIn';
     
     this.canvas.style.left = x + "px";
     this.canvas.style.top = y + "px";
-    this.canvas.className = 'slidein1sec';
+    this.canvas.className = 'zoomIn';
     
     document.getElementById("gameScreen").appendChild(this.sub_canvas);
     document.getElementById("gameScreen").appendChild(this.canvas);

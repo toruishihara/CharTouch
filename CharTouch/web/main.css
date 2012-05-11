@@ -75,7 +75,7 @@ body {
     font-weight: 900;
 	font-size: 48px;
     display: none;
-	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
+	-webkit-animation: 'slideIn' 2s linear 0s 1 normal;
 }
 #quiz {
     font-family: 'Helvetica';
@@ -96,7 +96,7 @@ body {
     background-image: url('ship_plate.png');
     background-size: contain;
     background-repeat: no-repeat;
-	-webkit-animation: 'slidein' 2s linear 0s 1 normal;
+	-webkit-animation: 'slideIn' 2s linear 0s 1 normal;
     padding-left: 70px;
 }
 #result {
