@@ -36,7 +36,7 @@
 	//[super dealloc];
 }
 
-#ifndef DEBUG
+//#ifndef DEBUG
 - (BOOL)webView:(UIWebView *)webView2 
 shouldStartLoadWithRequest:(NSURLRequest *)request 
  navigationType:(UIWebViewNavigationType)navigationType {
@@ -48,6 +48,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     }
     return YES;
 }
-#endif
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    NSLog(error); 
+}
+//#endif
 @end
 

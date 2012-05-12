@@ -150,6 +150,23 @@ body {
     font-weight: 900;
 	font-size: 48px;
 }
+#ad_ship {
+    position: absolute;
+	top: 220px;
+	left: -105px;
+	width: 440px;
+	height: 60px;
+    display: none;
+    background-image: url('ship_ad.png');
+    background-size: 440px 60px;
+    background-repeat: no-repeat;
+	-webkit-animation: 'slideInFar' 6s linear 0s 1 normal;
+}
+#admob_ad {	
+    position: absolute;
+	top: 6px;
+	left: 105px;
+}
 
 .zoomIn {
 	-webkit-animation: 'zoomIn' 2s linear 0s 1 normal;
@@ -193,6 +210,10 @@ body {
 }
 @-webkit-keyframes 'slideIn' {
 	0% { -webkit-transform: translate(320px,0px); }
+	100% { -webkit-transform: translate(0,0); }
+}
+@-webkit-keyframes 'slideInFar' {
+	0% { -webkit-transform: translate(420px,0px); }
 	100% { -webkit-transform: translate(0,0); }
 }
 

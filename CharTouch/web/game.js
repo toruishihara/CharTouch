@@ -25,7 +25,7 @@ var g_test_base = 0;
 console.log("start at " + date.getTime());
 
 // Debug console redirection
-/*
+
 console = new Object();
 console.log = function(log) {
     var iframe = document.createElement("IFRAME");
@@ -38,7 +38,6 @@ console.debug = console.log;
 console.info = console.log;
 console.warn = console.log;
 console.error = console.log;
- */
 // End Debug console redirection
 
 full.addEventListener("touchmove", moveHandler, true); 
@@ -60,9 +59,32 @@ document.getElementById("quizMessage").style.display = "none";
 
 console.log("top level main");
 
+//admob code
+var admob_vars = {
+    pubid: 'k47ed9a388f37c8627a712fb7f627f2d', // publisher id
+    bgcolor: '000000', // background color (hex)
+    text: 'FFFFFF', // font-color (hex)
+    test: true, // test mode, set to false if non-test mode
+    manual_mode: true
+};
+
+function  getAd() {    
+    console.log("_admob is valid");
+    var ad, ad2;
+    try {
+        ad = document.getElementById("admob_ad");
+        ad2 = _admob.fetchAd(ad);
+        console.log("Get ad done");
+    } catch(e) {
+        console.log("ad error");
+        return;
+    }
+};                                                                                                                                    
+//admob code
 
 function onload() {
     console.log("onload");
+    getAd();
     gameTitle();
     setTimeout(gameStart, g_time_game_start);
 }
@@ -106,6 +128,7 @@ function gameStart() {
     adjustToScreenSize();
     count = 0;
 	document.getElementById("resultMessage").style.display = "none";
+	document.getElementById("ad_ship").style.display = "none";
     var grade = window.localStorage["grade"];
     console.log("grade=" + grade);
     if (grade==undefined || grade.length < 2) {
@@ -159,7 +182,7 @@ function gameStart() {
         g_char_canvas[i].start(g_left_offset + (x * g_font_size), g_answer_offset + (y * g_font_size));
     }
     nextQuiz();
-    setTimeout(mergeCharCanvas, 2100);
+    setTimeout(mergeCharCanvas, 2500);
 }
 
 function gameTestStart() {
@@ -268,6 +291,7 @@ function showResult() {
     console.log("showResult");
 	var obj = document.getElementById("result");
 	var msg = document.getElementById("resultMessage");
+    var ad = document.getElementById("ad_ship");
     
     var sam = 0;
     for(var i=0;i<g_num_quiz;++i) {
@@ -277,4 +301,6 @@ function showResult() {
     }
 	obj.innerHTML = sam*100/g_num_quiz;
 	msg.style.display = "inline";
+
+	ad.style.display = "inline";
 }

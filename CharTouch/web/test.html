@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Advertisement</title>
+<script type="text/javascript">
+    var admob_vars = {
+    pubid: 'k47ed9a388f37c8627a712fb7f627f2d', 
+    bgcolor: 'ffffff', 
+    text: '000000', 
+    test: true, 
+    manual_mode: true 
+  }; 
+ 
+function showAd()
+{
+    _admob.fetchAd(document.getElementById('adspace'));
+}
+</script>
+<script type="text/javascript" src="http://mm.admob.com/static/iphone/iadmob.js"></script>
+<style type="text/css">
+    body {
+    margin-left: 0px;
+    margin-top: 100px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+</style>
+</head>
+<body onload="showAd()">
+<div id="adspace"></div>
+</body>
+</html>

@@ -1,4 +1,5 @@
 // Debug console redirection
+
 console = new Object();
 console.log = function(log) {
     var iframe = document.createElement("IFRAME");
@@ -11,6 +12,7 @@ console.debug = console.log;
 console.info = console.log;
 console.warn = console.log;
 console.error = console.log;
+
 // End Debug console redirection
 
 console.log("setting top");

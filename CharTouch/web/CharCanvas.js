@@ -107,9 +107,9 @@ function charCanvas_blackOut(ctx, rect_str)
 	var h = parseInt(rect_str.substr(7,2), 10);
     if (g_test) {
         ctx.fillStyle="rgba(0,0,255,0.5)";
-        ctx.fillRect(x*this.font_size/100, y*this.font_size/100, w*this.font_size/100, h*this.font_size/100);
+        ctx.fillRect(x*this.font_size/99, y*this.font_size/99, w*this.font_size/99, h*this.font_size/99);
     } else {
-        ctx.clearRect(x*this.font_size/100, y*this.font_size/100, w*this.font_size/100, h*this.font_size/100);
+        ctx.clearRect(x*this.font_size/99, y*this.font_size/99, w*this.font_size/99, h*this.font_size/99);
     }
 }
 
@@ -120,7 +120,7 @@ function charCanvas_clipRect(ctx, rect_str)
 	var y = parseInt(rect_str.substr(3,2), 10);
 	var w = parseInt(rect_str.substr(5,2), 10);
 	var h = parseInt(rect_str.substr(7,2), 10);
-	ctx.rect(x*this.font_size/100, y*this.font_size/100, w*this.font_size/100, h*this.font_size/100);
+	ctx.rect(x*this.font_size/99, y*this.font_size/99, w*this.font_size/99, h*this.font_size/99);
 }
 
 function charCanvas_start(x, y) {
@@ -138,5 +138,3 @@ function charCanvas_start(x, y) {
     document.getElementById("gameScreen").appendChild(this.sub_canvas);
     document.getElementById("gameScreen").appendChild(this.canvas);
 }
-
-

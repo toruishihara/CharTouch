@@ -23,6 +23,7 @@
 		2D5B4071152D17DF00EBEA2F /* space_math_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406F152D17DF00EBEA2F /* space_math_icon2.png */; };
 		2D6144F1152AB18B007A3631 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144ED152AB18B007A3631 /* ViewController_iPad.xib */; };
 		2D6144F2152AB18B007A3631 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6144EF152AB18B007A3631 /* ViewController_iPhone.xib */; };
+		2D6DA207155F1F8A00ABE2C0 /* ship_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA206155F1F8A00ABE2C0 /* ship_ad.png */; };
 		2D6EC5B8152683D000C384C6 /* space_math_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C8915264C5A0055CE3C /* space_math_icon.png */; };
 		2D6EC5B91526890F00C384C6 /* space_math_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C951526592A0055CE3C /* space_math_bk.png */; };
 		2D6EC5BA1526890F00C384C6 /* space_math.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB51C961526592A0055CE3C /* space_math.png */; };
@@ -124,6 +125,7 @@
 		2D6144EE152AB18B007A3631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		2D6144F0152AB18B007A3631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		2D614585152ABEDB007A3631 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D6DA206155F1F8A00ABE2C0 /* ship_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship_ad.png; sourceTree = "<group>"; };
 		2D71279814CF61F300B7CC9A /* data1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; lineEnding = 0; path = data1.js; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		2D8EBF761559D82100F21FEF /* GalaxyKanji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxyKanji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8EBF781559D82100F21FEF /* GalaxyKanji-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GalaxyKanji-Info.plist"; path = "/Users/toru1/Sites/CharTouch/GalaxyKanji-Info.plist"; sourceTree = "<absolute>"; };
@@ -289,6 +291,7 @@
 				2DB51C8B15264E6D0055CE3C /* data1m.js */,
 				2DB51C4E1523E2660055CE3C /* setting.js */,
 				2D71279814CF61F300B7CC9A /* data1.js */,
+				2D6DA206155F1F8A00ABE2C0 /* ship_ad.png */,
 				2DCFEA06151799FA00253EBA /* spaceback.png */,
 				2D55C165152D00D9000E2FA5 /* redo_icon.png */,
 				2D9C1656152BBA4F004CE014 /* ufo.png */,
@@ -447,6 +450,7 @@
 				2D8EBF701559D82100F21FEF /* Default@2x.png in Resources */,
 				2D8EBF711559D82100F21FEF /* Default.png in Resources */,
 				2D8EBF721559D82100F21FEF /* galaxy_math_icon_72.png in Resources */,
+				2D6DA207155F1F8A00ABE2C0 /* ship_ad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
