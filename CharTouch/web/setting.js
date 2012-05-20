@@ -16,10 +16,10 @@ console.error = console.log;
 // End Debug console redirection
 
 console.log("setting top");
-document.getElementById("backBtn").addEventListener("touchstart", gameBack, true);
-document.getElementById("grade").addEventListener("change", gradeChange, true);
 
 function onloadSetting() {
+    document.getElementById("backBtn").addEventListener("touchstart", gameBack, true);
+    document.getElementById("grade").addEventListener("change", gradeChange, true);
     var grade = window.localStorage["grade"];
     console.log("onload_setting grade=" + grade);
     if (grade != undefined && grade.length >= 2) {
