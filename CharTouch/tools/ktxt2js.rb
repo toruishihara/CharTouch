@@ -48,30 +48,35 @@ def one_file(fname,grade)
 		kjx = $h[kj]
 		s = sprintf("%s◯%s<rt>%s</rt>", kj0, kj2, yomi);	
 		s2 = sprintf("<ruby>%s</ruby>", s);
-		s3 = sprintf("<nobr>%s%s%s。</nobr>", pre, s2, apre);
+		s3 = sprintf("<nobr>%s%s%s</nobr>", pre, s2, apre);
 		s4 = s3.gsub("、", "、<wbr> </wbr>");
 		s5 = s4.gsub("　", "<wbr> </wbr>");
 
+		s6 = add_color(s5)
+		kj6 = add_color(kj)
 		printf "all_quiz['%dk%d'] = '%s%s,%s';\n", grade, i, kj, kjx, s5
-		s6 = ""
-		s5.each_char{ |c|
-		  g = $k2g[c]
-		  if ( !g.nil? ) then
-		    s6 += "<font color=\""
-		    s6 += $colors[g.to_i]
-		    s6 += "\">"
-		    s6 += c
-		    s6 += "</font>"
-		  else
-		    s6 += c
-		  end
-		}
-		printf $html, "%d,%d %s　%s<br>\n", grade, i, s6,kj
+		printf $html, "%d,%d %s　%s<br>\n", grade, i, s6,kj6
 		i = i+1
 	end
      }
 end
  
+def add_color(s)
+  s6 = ""
+  s.each_char{ |c|
+    g = $k2g[c]
+    if ( !g.nil? ) then
+      s6 += "<font color=\""
+      s6 += $colors[g.to_i]
+      s6 += "\">"
+      s6 += c
+      s6 += "</font>"
+    else
+      s6 += c
+    end
+  }
+  return s6
+end
 load_bushu()
 load_kanji_list()
 $html = open("k16.html", "w")
