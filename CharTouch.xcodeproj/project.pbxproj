@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0F78CB1572E48E007E487C /* CharTouch_for_iPad2.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F78CA1572E48E007E487C /* CharTouch_for_iPad2.mobileprovision */; };
+		2D0F78D21573489E007E487C /* GalaxyKanji_Dist.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F78D01573489E007E487C /* GalaxyKanji_Dist.mobileprovision */; };
+		2D0F78D31573489E007E487C /* GalaxyKanji.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F78D11573489E007E487C /* GalaxyKanji.mobileprovision */; };
 		2D29E6C314C666C500DA44CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C214C666C500DA44CB /* UIKit.framework */; };
 		2D29E6C514C666C500DA44CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C414C666C500DA44CB /* Foundation.framework */; };
 		2D29E6C714C666C500DA44CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D29E6C614C666C500DA44CB /* CoreGraphics.framework */; };
@@ -18,6 +21,8 @@
 		2D2B94BF153B4AC1007E1A59 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94BE153B4AC1007E1A59 /* Default-Portrait@2x~ipad.png */; };
 		2D2B94C2153B73BB007E1A59 /* ipad_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94C0153B73BB007E1A59 /* ipad_setting.css */; };
 		2D2B94C3153B73BB007E1A59 /* ipad.css in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94C1153B73BB007E1A59 /* ipad.css */; };
+		2D3CDAD61571D75D002790E0 /* Lazer_Gun_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2D3CDAD51571D75D002790E0 /* Lazer_Gun_3.wav */; };
+		2D3CDAD71571D75D002790E0 /* Lazer_Gun_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2D3CDAD51571D75D002790E0 /* Lazer_Gun_3.wav */; };
 		2D55C166152D00D9000E2FA5 /* redo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55C165152D00D9000E2FA5 /* redo_icon.png */; };
 		2D5B406C152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */; };
 		2D5B4071152D17DF00EBEA2F /* space_math_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406F152D17DF00EBEA2F /* space_math_icon2.png */; };
@@ -62,12 +67,9 @@
 		2D8EBF691559D82100F21FEF /* CharTouch_iphone_dist.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */; };
 		2D8EBF6A1559D82100F21FEF /* space_math_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406F152D17DF00EBEA2F /* space_math_icon2.png */; };
 		2D8EBF6B1559D82100F21FEF /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94BC153B4A80007E1A59 /* Default-Portrait~ipad.png */; };
-		2D8EBF6C1559D82100F21FEF /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94BE153B4AC1007E1A59 /* Default-Portrait@2x~ipad.png */; };
 		2D8EBF6D1559D82100F21FEF /* ipad_setting.css in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94C0153B73BB007E1A59 /* ipad_setting.css */; };
 		2D8EBF6E1559D82100F21FEF /* ipad.css in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B94C1153B73BB007E1A59 /* ipad.css */; };
 		2D8EBF6F1559D82100F21FEF /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9BF37E1543C8D900148269 /* back_icon.png */; };
-		2D8EBF701559D82100F21FEF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DAE83851545B70F00EA7E20 /* Default@2x.png */; };
-		2D8EBF711559D82100F21FEF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B406E152D17DF00EBEA2F /* Default.png */; };
 		2D8EBF721559D82100F21FEF /* galaxy_math_icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DAE83891545D8A800EA7E20 /* galaxy_math_icon_72.png */; };
 		2D8EBF791559D89400F21FEF /* data1k.js in Sources */ = {isa = PBXBuildFile; fileRef = 2DD65DEA14D20820007EE293 /* data1k.js */; };
 		2D911C5014F8D2780058C6CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D911C4F14F8D2780058C6CE /* StoreKit.framework */; };
@@ -95,9 +97,16 @@
 		2DF52A0814EE1E7C008AE062 /* iphone4.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DF52A0714EE1E7C008AE062 /* iphone4.css */; };
 		2DFA1370151BCED200458B97 /* setting.html in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA136F151BCED200458B97 /* setting.html */; };
 		2DFA1372151BD06800458B97 /* setting_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA1371151BD06800458B97 /* setting_icon.png */; };
+		2DFCA3A81571F64900A1CCFE /* galaxy_kanji_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFCA3A71571F64900A1CCFE /* galaxy_kanji_icon_57.png */; };
+		2DFCA3AB1571F65400A1CCFE /* galaxy_kanji_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFCA3AA1571F65400A1CCFE /* galaxy_kanji_icon_114.png */; };
+		2DFCA3AD1571F66D00A1CCFE /* galaxy_kanji_icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFCA3AC1571F66D00A1CCFE /* galaxy_kanji_icon_72.png */; };
+		2DFCA3AF1571F96C00A1CCFE /* space_kana_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFCA3AE1571F96C00A1CCFE /* space_kana_320.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D0F78CA1572E48E007E487C /* CharTouch_for_iPad2.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CharTouch_for_iPad2.mobileprovision; sourceTree = "<group>"; };
+		2D0F78D01573489E007E487C /* GalaxyKanji_Dist.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = GalaxyKanji_Dist.mobileprovision; sourceTree = "<group>"; };
+		2D0F78D11573489E007E487C /* GalaxyKanji.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = GalaxyKanji.mobileprovision; sourceTree = "<group>"; };
 		2D29E6BE14C666C500DA44CB /* GalaxyMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxyMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D29E6C214C666C500DA44CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D29E6C414C666C500DA44CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +127,7 @@
 		2D2B94BE153B4AC1007E1A59 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		2D2B94C0153B73BB007E1A59 /* ipad_setting.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = ipad_setting.css; sourceTree = "<group>"; };
 		2D2B94C1153B73BB007E1A59 /* ipad.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; lineEnding = 0; path = ipad.css; sourceTree = "<group>"; };
+		2D3CDAD51571D75D002790E0 /* Lazer_Gun_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lazer_Gun_3.wav; sourceTree = "<group>"; };
 		2D55C165152D00D9000E2FA5 /* redo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redo_icon.png; sourceTree = "<group>"; };
 		2D5B406B152D152A00EBEA2F /* CharTouch_iphone_dist.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CharTouch_iphone_dist.mobileprovision; sourceTree = "<group>"; };
 		2D5B406E152D17DF00EBEA2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -157,6 +167,10 @@
 		2DF52A0714EE1E7C008AE062 /* iphone4.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iphone4.css; sourceTree = "<group>"; };
 		2DFA136F151BCED200458B97 /* setting.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = setting.html; sourceTree = "<group>"; };
 		2DFA1371151BD06800458B97 /* setting_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_icon.png; sourceTree = "<group>"; };
+		2DFCA3A71571F64900A1CCFE /* galaxy_kanji_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy_kanji_icon_57.png; sourceTree = "<group>"; };
+		2DFCA3AA1571F65400A1CCFE /* galaxy_kanji_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy_kanji_icon_114.png; sourceTree = "<group>"; };
+		2DFCA3AC1571F66D00A1CCFE /* galaxy_kanji_icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy_kanji_icon_72.png; sourceTree = "<group>"; };
+		2DFCA3AE1571F96C00A1CCFE /* space_kana_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_kana_320.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +202,12 @@
 		2D29E6B314C666C500DA44CB = {
 			isa = PBXGroup;
 			children = (
+				2D0F78D01573489E007E487C /* GalaxyKanji_Dist.mobileprovision */,
+				2D0F78D11573489E007E487C /* GalaxyKanji.mobileprovision */,
+				2D0F78CA1572E48E007E487C /* CharTouch_for_iPad2.mobileprovision */,
+				2DFCA3AC1571F66D00A1CCFE /* galaxy_kanji_icon_72.png */,
+				2DFCA3AA1571F65400A1CCFE /* galaxy_kanji_icon_114.png */,
+				2DFCA3A71571F64900A1CCFE /* galaxy_kanji_icon_57.png */,
 				2DAE83891545D8A800EA7E20 /* galaxy_math_icon_72.png */,
 				2DAE83851545B70F00EA7E20 /* Default@2x.png */,
 				2D2B94BE153B4AC1007E1A59 /* Default-Portrait@2x~ipad.png */,
@@ -276,6 +296,8 @@
 		2DF1DF3514C7987200C4DB4E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				2DFCA3AE1571F96C00A1CCFE /* space_kana_320.png */,
+				2D3CDAD51571D75D002790E0 /* Lazer_Gun_3.wav */,
 				2DF1DF3714C7987200C4DB4E /* game.js */,
 				2DB1119A155C59800009006F /* CharCanvas.js */,
 				2DB51C8C15264E6D0055CE3C /* index_j.html */,
@@ -408,6 +430,7 @@
 				2DAE83871545B83400EA7E20 /* Default@2x.png in Resources */,
 				2DAE83881545B84200EA7E20 /* Default.png in Resources */,
 				2DAE838A1545D8A800EA7E20 /* galaxy_math_icon_72.png in Resources */,
+				2D3CDAD61571D75D002790E0 /* Lazer_Gun_3.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,14 +466,19 @@
 				2D8EBF691559D82100F21FEF /* CharTouch_iphone_dist.mobileprovision in Resources */,
 				2D8EBF6A1559D82100F21FEF /* space_math_icon2.png in Resources */,
 				2D8EBF6B1559D82100F21FEF /* Default-Portrait~ipad.png in Resources */,
-				2D8EBF6C1559D82100F21FEF /* Default-Portrait@2x~ipad.png in Resources */,
 				2D8EBF6D1559D82100F21FEF /* ipad_setting.css in Resources */,
 				2D8EBF6E1559D82100F21FEF /* ipad.css in Resources */,
 				2D8EBF6F1559D82100F21FEF /* back_icon.png in Resources */,
-				2D8EBF701559D82100F21FEF /* Default@2x.png in Resources */,
-				2D8EBF711559D82100F21FEF /* Default.png in Resources */,
 				2D8EBF721559D82100F21FEF /* galaxy_math_icon_72.png in Resources */,
 				2D6DA207155F1F8A00ABE2C0 /* ship_ad.png in Resources */,
+				2D3CDAD71571D75D002790E0 /* Lazer_Gun_3.wav in Resources */,
+				2DFCA3A81571F64900A1CCFE /* galaxy_kanji_icon_57.png in Resources */,
+				2DFCA3AB1571F65400A1CCFE /* galaxy_kanji_icon_114.png in Resources */,
+				2DFCA3AD1571F66D00A1CCFE /* galaxy_kanji_icon_72.png in Resources */,
+				2DFCA3AF1571F96C00A1CCFE /* space_kana_320.png in Resources */,
+				2D0F78CB1572E48E007E487C /* CharTouch_for_iPad2.mobileprovision in Resources */,
+				2D0F78D21573489E007E487C /* GalaxyKanji_Dist.mobileprovision in Resources */,
+				2D0F78D31573489E007E487C /* GalaxyKanji.mobileprovision in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +639,8 @@
 		2D8EBF741559D82100F21FEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CharTouch/CharTouch-Prefix.pch";
@@ -620,6 +649,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = GalaxyKanji;
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

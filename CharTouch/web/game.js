@@ -1,60 +1,72 @@
-var g_debug = 1;
+var g_debug = 0;
 var g_test = 0;
 var g_num_quiz = 10;
-var startTime = 0;
-var count = 0; // number of touched item
+var g_count = 0; // number of touched item
 var g_font_size = 32;
+var g_gap = 0;
 var g_answer_array_width = 9;
 var g_answer_array_height = 9;
 var g_answer_offset = 90;
-var default_grade = "1k_79";
-var mat;// = new Array(20*15);
-var mat_base = 20;
-//var msg = document.getElementById("quizMessage");
-var full = document.getElementById("gameScreen");
-var date = new Date();
-var Quizs;// = new Array(g_num_quiz);
-var results;// = new Array(g_num_quiz);
-var UsedQuiz;// = new Array(all_quiz_num);
-var isIphone = 0;
+var g_default_grade = "1k_79";
+var g_mat;// = new Array(20*15);
+var g_mat_base = 20;
+var g_full = document.getElementById("gameScreen");
+var g_quizs;// = new Array(g_num_quiz);
+var g_results;// = new Array(g_num_quiz);
+var g_used_quiz;// = new Array(all_quiz_num);
+var g_isIphone = 0;
+var g_isIpad = 0;
 var g_left_offset = 16;
 var g_char_canvas;// = new Array(10);
 var g_time_game_start = 4000;
 var g_test_base = 0;
+var g_audio_laser;
 
-console.log("start at " + date.getTime());
-
-// Debug console redirection
-
-console = new Object();
-console.log = function(log) {
-    var iframe = document.createElement("IFRAME");
-    iframe.setAttribute("src", "ios-log:#iOS#" + log);
-    document.documentElement.appendChild(iframe);
-    iframe.parentNode.removeChild(iframe);
-    iframe = null;    
+if (window.innerWidth == 320 && window.innerHeight == 480) {
+    g_isIphone = 1;
 }
-console.debug = console.log;
-console.info = console.log;
-console.warn = console.log;
-console.error = console.log;
-// End Debug console redirection
+if (window.innerWidth == 768 && window.innerHeight == 1004) {
+    g_isIpad = 1;
+}
+if (window.innerWidth > 320 && window.innerHeight > 480) {
+    g_gap = (window.innerWidth - 320)/20;
+    g_left_offset += 2*g_gap;
+    g_answer_offset += 2*g_gap;
+}
 
-full.addEventListener("touchmove", moveHandler, true); 
+if (g_isIphone || g_isIpad) {
+    console = new Object();
+    console.log = function(log) {
+        var iframe = document.createElement("IFRAME");
+        iframe.setAttribute("src", "ios-log:#iOS#" + log);
+        document.documentElement.appendChild(iframe);
+        iframe.parentNode.removeChild(iframe);
+        iframe = null;    
+    }
+    console.debug = console.log;
+    console.info = console.log;
+    console.warn = console.log;
+    console.error = console.log;
+}
+
+g_full.addEventListener("touchmove", moveHandler, true); 
 
 document.getElementById("restart").addEventListener("touchstart", gameStart, true);
 document.getElementById("setting").addEventListener("touchstart", gameSetting, true);
 
 if (g_debug) {
-    document.getElementById("restart").addEventListener("click", gameStart, true);
-    document.getElementById("setting").addEventListener("click", gameSetting, true);
     g_time_game_start = 1000;
+    document.getElementById("test").display = "inline";
+    document.getElementById("testNext").display = "inline";
     document.getElementById("test").addEventListener("touchstart", gameTestStart, true);
-    document.getElementById("test").addEventListener("click", gameTestStart, true);
     document.getElementById("testNext").addEventListener("touchstart", gameTestNext, true);
-    document.getElementById("testNext").addEventListener("click", gameTestNext, true);
+    if (!g_isIphone) {
+        document.getElementById("test").addEventListener("click", gameTestStart, true);
+        document.getElementById("restart").addEventListener("click", gameStart, true);
+        document.getElementById("setting").addEventListener("click", gameSetting, true);
+        document.getElementById("testNext").addEventListener("click", gameTestNext, true);
+    }
 }
-
 document.getElementById("quizMessage").style.display = "none";
 
 console.log("top level main");
@@ -64,7 +76,7 @@ var admob_vars = {
     pubid: 'k47ed9a388f37c8627a712fb7f627f2d', // publisher id
     bgcolor: '000000', // background color (hex)
     text: 'FFFFFF', // font-color (hex)
-    test: true, // test mode, set to false if non-test mode
+    test: false, // test mode, set to false if non-test mode
     manual_mode: true
 };
 
@@ -87,6 +99,7 @@ function onload() {
     getAd();
     gameTitle();
     setTimeout(gameStart, g_time_game_start);
+    g_audio_laser = new Audio("Lazer_Gun_3.wav");
 }
 
 function moveHandler(evt) {
@@ -111,8 +124,8 @@ function gameTitle() {
 
 function adjustToScreenSize() {
     console.log("game_start innerWidth=" + window.innerWidth + " H=" + window.innerHeight);
+        
     if (window.innerWidth <= 640 && !g_test) {
-        isIphone = 1;
         //g_font_size = 24 + (window.innerWidth - 320)/13;
         g_font_size = 32;
         g_answer_array_width = 9;
@@ -126,24 +139,24 @@ function adjustToScreenSize() {
 
 function gameStart() {
     adjustToScreenSize();
-    count = 0;
+    g_count = 0;
 	document.getElementById("resultMessage").style.display = "none";
 	document.getElementById("ad_ship").style.display = "none";
     var grade = window.localStorage["grade"];
     console.log("grade=" + grade);
     if (grade==undefined || grade.length < 2) {
         console.log("grade=default");
-        grade = default_grade;
+        grade = g_default_grade;
     }
         
     data_prefix = grade.split("_")[0];
     all_quiz_num = grade.split("_")[1];
     console.log("pre=" + data_prefix + " qn=" + all_quiz_num);
 
-    mat = new Array(20*15);
-    Quizs = new Array(g_num_quiz);
-    results = new Array(g_num_quiz);
-    UsedQuiz = new Array(all_quiz_num);
+    g_mat = new Array(20*15);
+    g_quizs = new Array(g_num_quiz);
+    g_results = new Array(g_num_quiz);
+    g_used_quiz = new Array(all_quiz_num);
     g_char_canvas = new Array(g_num_quiz);
 
     console.log("g_num_quiz=" + g_num_quiz);
@@ -154,9 +167,9 @@ function gameStart() {
             if (all_quiz[data_prefix+q]) {
                 qz = all_quiz[data_prefix+q].split(",");
             }
-        } while (!qz || UsedQuiz[qz[0]] == 1);
-        Quizs[i] = q;
-        UsedQuiz[qz[0]] = 1;
+        } while (!qz || g_used_quiz[qz[0]] == 1);
+        g_quizs[i] = q;
+        g_used_quiz[qz[0]] = 1;
         g_char_canvas[i] = new CharCanvas(i, qz[0], g_font_size);
         g_char_canvas[i].init();
 
@@ -164,37 +177,39 @@ function gameStart() {
         do {
             x = Math.floor(Math.random()*(g_answer_array_width));
             y = Math.floor(Math.random()*g_answer_array_height);
-        } while (mat[mat_base + y*g_answer_array_width + x] > 0);
-        mat[mat_base + y*g_answer_array_width + x] = 1;
-        mat[mat_base + y*g_answer_array_width + x+1] = 1;
-        mat[mat_base + y*g_answer_array_width + x+2] = 1;
-        mat[mat_base + y*g_answer_array_width + x-1] = 1;
-        mat[mat_base + y*g_answer_array_width + x-2] = 1;
-        mat[mat_base + (y-1)*g_answer_array_width + x] = 1;
-        mat[mat_base + (y-1)*g_answer_array_width + x+1] = 1;
-        mat[mat_base + (y-1)*g_answer_array_width + x-1] = 1;
-        mat[mat_base + (y+1)*g_answer_array_width + x] = 1;
-        mat[mat_base + (y+1)*g_answer_array_width + x+1] = 1;
-        mat[mat_base + (y+1)*g_answer_array_width + x-1] = 1;
+        } while (g_mat[g_mat_base + y*g_answer_array_width + x] > 0);
+        g_mat[g_mat_base + y*g_answer_array_width + x] = 1;
+        g_mat[g_mat_base + y*g_answer_array_width + x+1] = 1;
+        g_mat[g_mat_base + y*g_answer_array_width + x+2] = 1;
+        g_mat[g_mat_base + y*g_answer_array_width + x-1] = 1;
+        g_mat[g_mat_base + y*g_answer_array_width + x-2] = 1;
+        g_mat[g_mat_base + (y-1)*g_answer_array_width + x] = 1;
+        g_mat[g_mat_base + (y-1)*g_answer_array_width + x+1] = 1;
+        g_mat[g_mat_base + (y-1)*g_answer_array_width + x-1] = 1;
+        g_mat[g_mat_base + (y+1)*g_answer_array_width + x] = 1;
+        g_mat[g_mat_base + (y+1)*g_answer_array_width + x+1] = 1;
+        g_mat[g_mat_base + (y+1)*g_answer_array_width + x-1] = 1;
         
         g_char_canvas[i].canvas.addEventListener("touchstart", touchHandler, true);
-        g_char_canvas[i].canvas.addEventListener("click", touchHandler, true);
-        g_char_canvas[i].start(g_left_offset + (x * g_font_size), g_answer_offset + (y * g_font_size));
+        if (!g_isIphone && g_debug) {
+            g_char_canvas[i].canvas.addEventListener("click", touchHandler, true);
+        }
+        g_char_canvas[i].start(g_left_offset + (x * (g_font_size+g_gap)), g_answer_offset + (y * (g_font_size+g_gap)));
     }
     nextQuiz();
-    setTimeout(mergeCharCanvas, 2500);
+    setTimeout(mergeCharCanvas, 3500);
 }
 
 function gameTestStart() {
     g_test = 1;
     g_num_quiz = g_answer_array_width*g_answer_array_width;
     
-    count = 0;
+    g_count = 0;
     var grade = window.localStorage["grade"];
     console.log("grade=" + grade);
     if (grade==undefined || grade.length < 2) {
         console.log("grade=default");
-        grade = default_grade;
+        grade = g_default_grade;
     }
     
     data_prefix = grade.split("_")[0];
@@ -250,25 +265,28 @@ function touchHandler(evt) {
     console.log("touchHandler in " + this.id + " " + this.className);
     if (this.className == "fade") return;
     var obj = this;
-    if (!this.id.match("f"+count)) {
+    if (!this.id.match("f"+g_count)) {
         //this.savedId = this.id;
         this.className = "shake";
         setTimeout(function(){
                    obj.iclassName = "";
                    }, 2000);
-        results[count] = -1;
+        g_results[g_count] = -1;
         return;
     }
+    // Correct
+    g_audio_laser.play();
+    
     setTimeout(function(){
         console.log("hide item");
         obj.style.display = "none";
     }, 2000);
     this.className = "fade";
-    if (results[count] != -1) {
-        results[count] = 1;
+    if (g_results[g_count] != -1) {
+        g_results[g_count] = 1;
     }
-    count = count + 1;
-    if (count >= g_num_quiz){
+    g_count = g_count + 1;
+    if (g_count >= g_num_quiz){
         showResult();
     } else {
         nextQuiz();
@@ -281,7 +299,7 @@ function nextQuiz() {
 	var msg = document.getElementById("quizMessage");
     var d = new Date();
 
-    qz = all_quiz[data_prefix+Quizs[count]].split(",");
+    qz = all_quiz[data_prefix + g_quizs[g_count]].split(",");
     obj.innerHTML = qz[1];
     msg.style.display = "inline";
     //document.getElementById("qhelp").className = "fade";
@@ -295,7 +313,7 @@ function showResult() {
     
     var sam = 0;
     for(var i=0;i<g_num_quiz;++i) {
-        if (results[i] == 1) {
+        if (g_results[i] == 1) {
             sam = sam + 1;
         }
     }
