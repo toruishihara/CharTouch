@@ -115,7 +115,7 @@ function charCanvas_blackOut(ctx, rect_str)
 
 function charCanvas_clipRect(ctx, rect_str)
 {
-	var part = rect_str.charAt(0);
+	var part = rect_str.charAt(0); // 'L':Left, 'R':Right, 'B':Bottom, 'T':Top
 	var x = parseInt(rect_str.substr(1,2), 10);
 	var y = parseInt(rect_str.substr(3,2), 10);
 	var w = parseInt(rect_str.substr(5,2), 10);

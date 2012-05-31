@@ -1,6 +1,6 @@
-var g_debug = 0;
-var g_test = 0;
-var g_num_quiz = 10;
+var g_debug = 1;
+var g_test = 1;
+var g_num_quiz = 1;
 var g_count = 0; // number of touched item
 var g_font_size = 32;
 var g_gap = 0;
@@ -55,6 +55,7 @@ document.getElementById("restart").addEventListener("touchstart", gameStart, tru
 document.getElementById("setting").addEventListener("touchstart", gameSetting, true);
 
 if (g_debug) {
+	conolse.log("g_debug");
     g_time_game_start = 1000;
     document.getElementById("test").display = "inline";
     document.getElementById("testNext").display = "inline";
@@ -76,7 +77,7 @@ var admob_vars = {
     pubid: 'k47ed9a388f37c8627a712fb7f627f2d', // publisher id
     bgcolor: '000000', // background color (hex)
     text: 'FFFFFF', // font-color (hex)
-    test: false, // test mode, set to false if non-test mode
+    test: true, // test mode, set to false if non-test mode
     manual_mode: true
 };
 
@@ -89,6 +90,8 @@ function  getAd() {
         console.log("Get ad done");
     } catch(e) {
         console.log("ad error");
+        console.log(e.message);
+        console.log("ad error");
         return;
     }
 };                                                                                                                                    
@@ -100,6 +103,7 @@ function onload() {
     gameTitle();
     setTimeout(gameStart, g_time_game_start);
     g_audio_laser = new Audio("Lazer_Gun_3.wav");
+    _admob.fetchAd(document.getElementById('admob_ad'));
 }
 
 function moveHandler(evt) {

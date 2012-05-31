@@ -1,0 +1,1 @@
+../../CharTouch/web/data1k.js
